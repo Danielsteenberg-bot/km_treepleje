@@ -9,6 +9,7 @@
     box-sizing: border-box;
     font-family: 'Titillium Web', sans-serif;
 }
+
 li {
     list-style-type: none;
 }
@@ -21,14 +22,18 @@ a:visited {
 
 
 /* Navigation */
-.navbar-mobile {
+.desktop-navigation {
+    display: none;
+}
+.navbar {
     height: 50px;
     background-color: var(--green);
     display: flex;
     justify-content: space-between;
+    overflow: hidden;
 }
 
-.navbar-mobile-left {
+.navbar-left {
     width: 33%;
     display: flex;
     align-items: center;
@@ -39,25 +44,34 @@ a:visited {
     height: 25px;
     margin-left: 10px;
 }
-.logo-mobile {
+.logo {
     height: 25px;
 }
 
 
-.navbar-mobile-middle {
+.navbar-middle {
     width: 33%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .fa-bars {
-    color: white;
+    color: var(--white);
 }
 .fa-bars:hover {
     cursor: pointer;
 }
+#cross {
+    display: none;
+}
+.fa-xmark {
+    color: var(--white);
+}
+.fa-xmark:hover {
+    cursor: pointer;
+} 
 
-.navbar-mobile-right {
+.navbar-right {
     width: 33%;
     display: flex;
     align-items: center;
@@ -76,10 +90,14 @@ a:visited {
     margin-right: 10px;
 }
 
+.hidden-navigation-wrapper {
+    position: relative;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+}
 .hidden-navigation {
     position: absolute;
-    top: 100px;
-    left: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -87,10 +105,40 @@ a:visited {
     color: var(--white);
     width: 100vw;
     height: 100vh;
+    transition-duration: .4s;
 }
 .hidden-navigation-li {
     text-align: center;
     margin-bottom: 10px;
 }
 
+@media only screen and (min-width: 1120px) {
+    .navbar-middle {
+        width: 100%;
+    }
+    #burger-cross-wrapper {
+        display: none;
+    }
+    .desktop-navigation {
+        display: block;
+        width: 100%;
+    }
+    .desktop-navigation-ul {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        color: var(--white);
+    }
+    .desktop-navigation-li {
+        margin-right: 50px;
+    }
+    .navbar-right {
+        width: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+}
 

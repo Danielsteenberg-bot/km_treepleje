@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KM-Træpleje</title>
     <!-- Css -->
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <!-- Script -->
-    <script defer src="../js/script.js"></script>
+    <script defer src="script/navigation.js"></script>
     <!-- Font awesome -->
     <script src="https://kit.fontawesome.com/9eb3bf195d.js" crossorigin="anonymous"></script>
     <!-- Google Fonts -->
@@ -18,27 +18,42 @@
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="navbar-mobile">
-        <div class="navbar-mobile-left">
+    <nav class="navbar">
+        <div class="navbar-left">
 
             
             <a class="logo-link" href="#">
-                <img class="logo-mobile" src="../assets/img/Logo-original-small.png">
+                <img class="logo" src="assets/navigation/Logo-original.png">
             </a>
         </div>
 
-        <div class="navbar-mobile-middle">
-            <i id="burger" class="fa-solid fa-bars fa-xl"></i>
+        <div class="navbar-middle">
+            <div id="burger-cross-wrapper">
+                <i id="burger" class="fa-solid fa-bars fa-xl"></i>
+                <i id="cross" class="fa-solid fa-xmark fa-2xl"></i>
+            </div>
+
+            <div class="desktop-navigation">
+                <ul class="desktop-navigation-ul">
+                    <li class="desktop-navigation-li">Hjem</li>
+                    <li class="desktop-navigation-li">Services</li>
+                    <li class="desktop-navigation-li">Galleri</li>
+                    <li class="desktop-navigation-li">Om Os</li>
+                </ul>
+            </div>
         </div>
 
-        <div class="navbar-mobile-right">
+        <div class="navbar-right">
             <a class="navbar-facebook-link" target="_blank"href="https://www.facebook.com/KM-Tr%C3%A6pleje-594615387603785/">
-                <img class="facebook-icon" src="../assets/img/facebook-icon_1.png" alt="">
+                <img class="facebook-icon" src="assets/navigation/facebook-icon_1.png" alt="">
             </a>
         </div>
+
+
     </nav>
 <!-- -------------------Hidden navigation -->
-    <div id="hidden-navigation" class="hidden-navigation">
+<div class="hidden-navigation-wrapper">
+    <div id="hidden-navigation" class="hidden-navigation" style="left: -100vw;">
         <ul>
             <li class="hidden-navigation-li"><a href="">HJEM</a></li>
             <li class="hidden-navigation-li"><a href="">SERVICES</a></li>
@@ -46,5 +61,6 @@
             <li class="hidden-navigation-li"><a href="">KONTAKT</a></li>
         </ul>
     </div>
+</div>
 </body>
 </html>
