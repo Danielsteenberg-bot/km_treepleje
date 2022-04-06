@@ -1,3 +1,4 @@
+/* Generic shit */
 :root {
     --white: #ffffff;
     --black: #000;
@@ -33,6 +34,8 @@ a:visited {
     overflow: hidden;
 }
 
+
+/* ------- left side */
 .navbar-left {
     width: 33%;
     display: flex;
@@ -49,6 +52,7 @@ a:visited {
 }
 
 
+/* ------ Middle */
 .navbar-middle {
     width: 33%;
     display: flex;
@@ -71,6 +75,8 @@ a:visited {
     cursor: pointer;
 } 
 
+
+/* ------ Right side */
 .navbar-right {
     width: 33%;
     display: flex;
@@ -90,6 +96,8 @@ a:visited {
     margin-right: 10px;
 }
 
+
+/* ------- Hidden navigation */
 .hidden-navigation-wrapper {
     position: relative;
     overflow: hidden;
@@ -112,6 +120,8 @@ a:visited {
     margin-bottom: 10px;
 }
 
+
+/* ------ Navigation Responsive */
 @media only screen and (min-width: 1120px) {
     .navbar-middle {
         width: 100%;
