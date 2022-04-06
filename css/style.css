@@ -1,8 +1,14 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 .footer{
     background-color: black;
-    font-family: 'Titillium';
+    font-family: 'Titillium Web';
     color: white;
-    height: 100vh;
+    height: 70vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -23,3 +29,36 @@
 .footer-logo{
     padding: 10px;
 }
+
+.footer-bund-facebook{
+    display: flex;
+    justify-content: center;
+}
+
+.footer-facebook{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1rem;
+}
+
+.footer-logo-under-tekst-bund{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-logo-overskrift{
+    font-size: 40px;
+}
+.footer-info-container{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 15px;
+}
+
+.footer-bund-container{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
