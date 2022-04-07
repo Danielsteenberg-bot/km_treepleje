@@ -1,6 +1,52 @@
 /* Cover section */
-.cover-background {
-    background-image: url("../assets/cover/chainsaw-autunm_cover.jpg");
-    width: 100vw;
+.cover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url("../assets/cover/chainsaw-autunm_cover.jpg");
+    background-size: cover;
+    width: 100%;
     height: 100vh;
+    background-size: cover;
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cover-content-wrapper {
+    text-align: center;
+    animation: coverContentFadeIn 1s ease-out;
+}
+.cover-h1 {
+    font-size: 2.5rem;
+}
+.logo-cover {
+    width: 225px;
+}
+.cover-h2-upper {
+    font-size: 2rem;
+}
+.cover-h2-lower {
+    font-size: 2.5rem;
+}
+
+/* Keyframes */
+@keyframes coverContentFadeIn {
+    from {opacity: .1;}
+    to {opacity: 1;}
+} 
+
+
+/* Responsive */
+@media only screen and (min-width: 1120px) {
+    .cover-h1 {
+        font-size: 3.5rem;
+    }
+    .logo-cover {
+        width: 325px;
+    }
+    .cover-h2-upper {
+        font-size: rem;
+    }
+    .cover-h2-lower {
+        font-size: 3.5rem;
+    }
 }
