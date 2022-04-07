@@ -1,3 +1,157 @@
+/* Generic shit */
+:root {
+    --white: #ffffff;
+    --black: #000;
+    --green: #1D2E1B;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+li {
+    list-style-type: none;
+}
+a {
+   text-decoration: none; 
+}
+a:visited { 
+    color: inherit;
+}
+
+
+/* Navigation */
+.desktop-navigation {
+    display: none;
+}
+.navbar {
+    height: 50px;
+    background-color: var(--green);
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+
+/* ------- left side */
+.navbar-left {
+    width: 33%;
+    display: flex;
+    align-items: center;
+}
+
+.logo-link {
+    width: 52.5px;
+    height: 25px;
+    margin-left: 10px;
+}
+.logo {
+    height: 25px;
+}
+
+
+/* ------ Middle */
+.navbar-middle {
+    width: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fa-bars {
+    color: var(--white);
+}
+.fa-bars:hover {
+    cursor: pointer;
+}
+#cross {
+    display: none;
+}
+.fa-xmark {
+    color: var(--white);
+}
+.fa-xmark:hover {
+    cursor: pointer;
+} 
+
+
+/* ------ Right side */
+.navbar-right {
+    width: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.facebook-icon {
+    width: 25px;
+    height: 25px;
+}
+.facebook-link:hover {
+    cursor: pointer;
+}
+.navbar-facebook-link {
+    height: 25px;
+    width: 25px;
+    margin-right: 10px;
+}
+
+
+/* ------- Hidden navigation */
+.hidden-navigation-wrapper {
+    position: relative;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+}
+.hidden-navigation {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1D2E1B;
+    color: var(--white);
+    width: 100vw;
+    height: 100vh;
+    transition-duration: .4s;
+}
+.hidden-navigation-li {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+/* ------ Navigation Responsive */
+@media only screen and (min-width: 1120px) {
+    .navbar-middle {
+        width: 100%;
+    }
+    #burger-cross-wrapper {
+        display: none;
+    }
+    .desktop-navigation {
+        display: block;
+        width: 100%;
+    }
+    .desktop-navigation-ul {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        color: var(--white);
+    }
+    .desktop-navigation-li {
+        margin-right: 50px;
+    }
+    .navbar-right {
+        width: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+}
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -164,157 +318,3 @@
 
 
 }
-/* Generic shit */
-:root {
-    --white: #ffffff;
-    --black: #000;
-    --green: #1D2E1B;
-}
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Titillium Web', sans-serif;
-}
-
-li {
-    list-style-type: none;
-}
-a {
-   text-decoration: none; 
-}
-a:visited { 
-    color: inherit;
-}
-
-
-/* Navigation */
-.desktop-navigation {
-    display: none;
-}
-.navbar {
-    height: 50px;
-    background-color: var(--green);
-    display: flex;
-    justify-content: space-between;
-    overflow: hidden;
-}
-
-
-/* ------- left side */
-.navbar-left {
-    width: 33%;
-    display: flex;
-    align-items: center;
-}
-
-.logo-link {
-    width: 52.5px;
-    height: 25px;
-    margin-left: 10px;
-}
-.logo {
-    height: 25px;
-}
-
-
-/* ------ Middle */
-.navbar-middle {
-    width: 33%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.fa-bars {
-    color: var(--white);
-}
-.fa-bars:hover {
-    cursor: pointer;
-}
-#cross {
-    display: none;
-}
-.fa-xmark {
-    color: var(--white);
-}
-.fa-xmark:hover {
-    cursor: pointer;
-} 
-
-
-/* ------ Right side */
-.navbar-right {
-    width: 33%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-}
-.facebook-icon {
-    width: 25px;
-    height: 25px;
-}
-.facebook-link:hover {
-    cursor: pointer;
-}
-.navbar-facebook-link {
-    height: 25px;
-    width: 25px;
-    margin-right: 10px;
-}
-
-
-/* ------- Hidden navigation */
-.hidden-navigation-wrapper {
-    position: relative;
-    overflow: hidden;
-    width: 100vw;
-    height: 100vh;
-}
-.hidden-navigation {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #1D2E1B;
-    color: var(--white);
-    width: 100vw;
-    height: 100vh;
-    transition-duration: .4s;
-}
-.hidden-navigation-li {
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-
-/* ------ Navigation Responsive */
-@media only screen and (min-width: 1120px) {
-    .navbar-middle {
-        width: 100%;
-    }
-    #burger-cross-wrapper {
-        display: none;
-    }
-    .desktop-navigation {
-        display: block;
-        width: 100%;
-    }
-    .desktop-navigation-ul {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        color: var(--white);
-    }
-    .desktop-navigation-li {
-        margin-right: 50px;
-    }
-    .navbar-right {
-        width: 35px;
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-    }
-
-}
-
