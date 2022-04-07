@@ -1,0 +1,6 @@
+/* Cover section */
+.cover-background {
+    background-image: url("../assets/cover/chainsaw-autunm_cover.jpg");
+    width: 100vw;
+    height: 100vh;
+}
