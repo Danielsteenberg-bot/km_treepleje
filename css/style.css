@@ -3,6 +3,8 @@
     --white: #ffffff;
     --black: #000;
     --green: #1D2E1B;
+    --grey: #E5E5E5;
+    --red: #E25265; 
 }
 * {
     padding: 0;
