@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/card-section.css">
     <!-- Script -->
     <script defer src="script/navigation.js"></script>
+    <script defer src="script/card-section.js"></script>
     <!-- Font awesome -->
     <script src="https://kit.fontawesome.com/9eb3bf195d.js" crossorigin="anonymous"></script>
     <!-- Google Fonts -->
@@ -85,17 +86,157 @@
 <!-- Card Section -->
 
 <section class="card-section">
+
     <h3 class="card-section-h3">Vi kan hjælpe dig!</h3>
+
     <div class="card-wrapper">
+        <!-- Træfældning -->
         <div class="card">
             <div class="card-content-wrapper">
                 <img class="card-icon" src="assets/card-section/icon-traefaeldning_square_white.png" alt="tree cutting icon">
                 <h2 class="card-h2">Træfældning</h2>
                 <hr>
-                <button class="card-button">LÆS MERE</button>
+                <div class="foldout-wrapper" style="height: 0px;">
+                    <h1>Ser Dit Træ Træt Ud?</h1>
+                    <p class="foldout-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis aliquam veritatis non ipsam alias molestiae earum beatae. Dicta perferendis cum, maiores suscipit dolore nesciunt possimus illum iusto impedit? Perferendis vero aut natus veritatis temporibus fugiat, voluptatem eligendi consequatur itaque assumenda facilis. Asperiores, reprehenderit dolore! Ea </p>
+                
+                </div>
+                <div class="arrow-wrapper accordion">
+                    <p class="card-p">LÆS MERE</p>
+                    <img class="card-arrow-icon" id="arrow-icon" src="assets/card-section/arrow_black_small.png" alt="Black arrow">
+                </div>
             </div>
         </div>
+
+        <!-- Topkapning -->
+        <div class="card">
+            <div class="card-content-wrapper">
+                <img class="card-icon" src="assets/card-section/icon-ticon-traepleje_white_1.png" alt="tree cutting icon">
+                <h2 class="card-h2">Topkapning</h2>
+                <hr>
+                <div class="foldout-wrapper" style="height: 0px;">
+                    <h1>Pust nyt liv i dine træer</h1>
+                    <p class="foldout-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis aliquam veritatis non ipsam alias molestiae earum beatae. Dicta perferendis cum, maiores suscipit dolore nesciunt possimus illum iusto impedit? Perferendis vero aut natus veritatis temporibus fugiat, voluptatem eligendi consequatur itaque assumenda facilis. Asperiores, reprehenderit dolore! Ea </p>
+                
+                </div>
+                <div class="arrow-wrapper accordion">
+                    <p class="card-p">LÆS MERE</p>
+                    <img class="card-arrow-icon" id="arrow-icon" src="assets/card-section/arrow_black_small.png" alt="Black arrow">
+                </div>
+            </div>
+        </div>
+        
+        <!-- Hækkeklipning -->
+        <div class="card">
+            <div class="card-content-wrapper">
+                <img class="card-icon" src="assets/card-section/icon-haekkelip_white.png" alt="tree cutting icon">
+                <h2 class="card-h2">Hækkeklipning</h2>
+                <hr>
+                <div class="foldout-wrapper" style="height: 0px;">
+                    <h1>Snorligfe Hæk</h1>
+                    <p class="foldout-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis aliquam veritatis non ipsam alias molestiae earum beatae. Dicta perferendis cum, maiores suscipit dolore nesciunt possimus illum iusto impedit? Perferendis vero aut natus veritatis temporibus fugiat, voluptatem eligendi consequatur itaque assumenda facilis. Asperiores, reprehenderit dolore! Ea </p>
+                
+                </div>
+                <div class="arrow-wrapper accordion">
+                    <p class="card-p">LÆS MERE</p>
+                    <img class="card-arrow-icon" id="arrow-icon" src="assets/card-section/arrow_black_small.png" alt="Black arrow">
+                </div>
+            </div>
+        </div>
+
+        <!-- Rodfræsning -->
+        <div class="card">
+            <div class="card-content-wrapper">
+                <img class="card-icon" src="assets/card-section/icon-stoerrehavearbejde_white.png" alt="tree cutting icon">
+                <h2 class="card-h2">Rodfræsning</h2>
+                <hr>
+                <div class="foldout-wrapper" style="height: 0px;">
+                    <h1>Fjern de trælse rødder i haven</h1>
+                    <p class="foldout-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis aliquam veritatis non ipsam alias molestiae earum beatae. Dicta perferendis cum, maiores suscipit dolore nesciunt possimus illum iusto impedit? Perferendis vero aut natus veritatis temporibus fugiat, voluptatem eligendi consequatur itaque assumenda facilis. Asperiores, reprehenderit dolore! Ea </p>
+                
+                </div>
+                <div class="arrow-wrapper accordion">
+                    <p class="card-p">LÆS MERE</p>
+                    <img class="card-arrow-icon" id="arrow-icon" src="assets/card-section/arrow_black_small.png" alt="Black arrow">
+                </div>
+            </div>
+        </div>
+        <!-- Flishugning -->
+        <div class="card">
+            <div class="card-content-wrapper">
+                <img class="card-icon" src="assets/card-section/icon-traefaeldning_square_white.png" alt="tree cutting icon">
+                <h2 class="card-h2">Flishugning</h2>
+                <hr>
+                <div class="foldout-wrapper" style="height: 0px;">
+                    <h1>Hober grenene sig op</h1>
+                    <p class="foldout-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis aliquam veritatis non ipsam alias molestiae earum beatae. Dicta perferendis cum, maiores suscipit dolore nesciunt possimus illum iusto impedit? Perferendis vero aut natus veritatis temporibus fugiat, voluptatem eligendi consequatur itaque assumenda facilis. Asperiores, reprehenderit dolore! Ea </p>
+                
+                </div>
+                <div class="arrow-wrapper accordion">
+                    <p class="card-p">LÆS MERE</p>
+                    <img class="card-arrow-icon" id="arrow-icon" src="assets/card-section/arrow_black_small.png" alt="Black arrow">
+                </div>
+            </div>
+        </div>
+
+        <!-- Beskæring -->
+        <div class="card">
+            <div class="card-content-wrapper">
+                <img class="card-icon" src="assets/card-section/icon-ticon-traepleje_white_1.png" alt="tree cutting icon">
+                <h2 class="card-h2">Beskæring</h2>
+                <hr>
+                <div class="foldout-wrapper" style="height: 0px;">
+                    <h1>Ændre adgangen i haven</h1>
+                    <p class="foldout-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis aliquam veritatis non ipsam alias molestiae earum beatae. Dicta perferendis cum, maiores suscipit dolore nesciunt possimus illum iusto impedit? Perferendis vero aut natus veritatis temporibus fugiat, voluptatem eligendi consequatur itaque assumenda facilis. Asperiores, reprehenderit dolore! Ea </p>
+                
+                </div>
+                <div class="arrow-wrapper accordion">
+                    <p class="card-p">LÆS MERE</p>
+                    <img class="card-arrow-icon" id="arrow-icon" src="assets/card-section/arrow_black_small.png" alt="Black arrow">
+                </div>
+            </div>
+        </div>
+        
+        <!-- Risikovurdering -->
+        <div class="card">
+            <div class="card-content-wrapper">
+                <img class="card-icon" src="assets/card-section/icon-haekkelip_white.png" alt="tree cutting icon">
+                <h2 class="card-h2">Risikovurdering</h2>
+                <hr>
+                <div class="foldout-wrapper" style="height: 0px;">
+                    <h1>Er der storm på vej</h1>
+                    <p class="foldout-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis aliquam veritatis non ipsam alias molestiae earum beatae. Dicta perferendis cum, maiores suscipit dolore nesciunt possimus illum iusto impedit? Perferendis vero aut natus veritatis temporibus fugiat, voluptatem eligendi consequatur itaque assumenda facilis. Asperiores, reprehenderit dolore! Ea </p>
+                
+                </div>
+                <div class="arrow-wrapper accordion">
+                    <p class="card-p">LÆS MERE</p>
+                    <img class="card-arrow-icon" id="arrow-icon" src="assets/card-section/arrow_black_small.png" alt="Black arrow">
+                </div>
+            </div>
+        </div>
+
+        <!-- Forsikret og Døgnvagt -->
+        <div class="card">
+            <div class="card-content-wrapper">
+                <img class="card-icon" src="assets/card-section/icon-stoerrehavearbejde_white.png" alt="tree cutting icon">
+                <h2 class="card-h2 forsikret">Forsikret <br> & <br> Døgnvagt</h2>
+                <hr>
+                <div class="foldout-wrapper" style="height: 0px;">
+                    <h1>Skulle det utænkelige ske</h1>
+                    <p class="foldout-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis aliquam veritatis non ipsam alias molestiae earum beatae. Dicta perferendis cum, maiores suscipit dolore nesciunt possimus illum iusto impedit? Perferendis vero aut natus veritatis temporibus fugiat, voluptatem eligendi consequatur itaque assumenda facilis. Asperiores, reprehenderit dolore! Ea </p>
+                
+                </div>
+                <div class="arrow-wrapper accordion">
+                    <p class="card-p">LÆS MERE</p>
+                    <img class="card-arrow-icon" id="arrow-icon" src="assets/card-section/arrow_black_small.png" alt="Black arrow">
+                </div>
+            </div>
+        </div>
+
+        
+
     </div>
+    
 </section>
 
 
