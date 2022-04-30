@@ -23,9 +23,16 @@
     align-items: center;
     background-color: var(--grey);
     width: 275px;
-    min-height: 400px;
+    min-height: 350px;
     border-radius: 5px;
-    margin: 30px;
+    margin: 10px;
+}
+.card-link {
+    width: 100%;
+    height: 100%;
+}
+.card-link:hover {
+    cursor: pointer;
 }
 .card-content-wrapper {
     display: flex;
@@ -60,13 +67,7 @@ hr {
 .card-p{
     font-size: 20px;
     font-weight: bold;
-    cursor: pointer;
 }
-.foldout-wrapper {
-    margin: 0 20px 0 20px;
-    overflow: hidden;
-    transition: .25s;
- }
 .arrow-wrapper {
     margin: 25px 0 20px 0;
     display: flex;
@@ -74,12 +75,6 @@ hr {
     align-items: center;
     transition: .25s;
 }
-.card-arrow-icon {
-    width: 34px;
-    margin-top: 5px;
-    cursor: pointer;   
-}
-
 .forsikret {
     text-align: center;
     line-height: 35px;

@@ -5,6 +5,9 @@
     --green: #1D2E1B;
     --grey: #E5E5E5;
     --red: #E25265; 
+
+    --large: 32px;
+    --medium: 20px;
 }
 * {
     padding: 0;
@@ -12,12 +15,16 @@
     box-sizing: border-box;
     font-family: 'Titillium Web', sans-serif;
 }
+body {
+    background-color: var(--green);
+}
 
 li {
     list-style-type: none;
 }
 a {
    text-decoration: none; 
+   color: inherit;
 }
 a:visited { 
     color: inherit;
@@ -33,7 +40,7 @@ a:visited {
     width: 100%;
     z-index: 2;
     height: 50px;
-    background-color: var(--green);
+    background-color: var(--black);
     display: flex;
     justify-content: space-between;
     overflow: hidden;
@@ -115,18 +122,34 @@ a:visited {
     position: absolute;
     display: flex;
     justify-content: center;
-    align-items: center;
     background-color: #1D2E1B;
     color: var(--white);
     width: 100vw;
     height: 100vh;
     transition-duration: .4s;
-    font-size: 1.7rem;
+    font-size: 24px;
     letter-spacing: 1px;
+    margin-top: 30px;
+    text-align: center;
 }
 .hidden-navigation-li {
-    text-align: center;
     margin-bottom: 10px;
+}
+.services {
+    cursor: pointer;
+    margin-left: 20px;
+}
+.fold-out-arrow {
+    height: 10px;
+    margin-bottom: 3px;
+    transition: .3s;
+}
+.navigation-accordion {
+    overflow: hidden;
+    transition: .3s;
+    text-align: left;
+    font-size: 20px;
+    padding: 0 0 0 100px;
 }
 
 
