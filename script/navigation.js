@@ -2,18 +2,19 @@ let BurgerCrossWrapper = document.getElementById("burger-cross-wrapper")
 let bars = document.getElementById("burger")
 let cross = document.getElementById("cross")
 let hiddenNav = document.getElementById("hidden-navigation")
+let hiddenNawWrapper = document.querySelector(".hidden-navigation-wrapper")
 
 BurgerCrossWrapper.addEventListener("click", popOutNavbar);
 
 function popOutNavbar() {
     
-    if(hiddenNav.style.left == "-100vw") {
-        hiddenNav.style.left = "0vw"
+    if(hiddenNawWrapper.style.left == "-100vw") {
+        hiddenNawWrapper.style.left = "0vw"
         bars.style.display = "none"
         cross.style.display = "block"
     }
     else {
-        hiddenNav.style.left = "-100vw"
+        hiddenNawWrapper.style.left = "-100vw"
         bars.style.display = "block"
         cross.style.display = "none"
         servicesDivWrapper.style.height = "0px"
@@ -27,7 +28,7 @@ let serviceArrow = document.querySelector(".fold-out-arrow")
 
 servicesMenuPoint.addEventListener("click", function() {
     if (servicesDivWrapper.style.height <= "0px") {
-        servicesDivWrapper.style.height = "250px"
+        servicesDivWrapper.style.height = "280px"
         serviceArrow.style.transform = "rotate(180deg)"
     }
     else {
@@ -35,4 +36,3 @@ servicesMenuPoint.addEventListener("click", function() {
         serviceArrow.style.transform = "rotate(0deg)"
     }
 })
-console.log(servicesMenuPoint)
