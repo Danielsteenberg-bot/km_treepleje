@@ -65,15 +65,12 @@
 .contact-img-container{
     display: none;
     overflow: hidden;
-    width: 50%;
-    
-}
-.index-form-img {
-    float: right;
-    width: 1000px;
+    width: 50%; 
 }
 
+
 /* Responsive */
+
 @media only screen and (min-width: 768px) {
     .contact-content-wrapper {
         justify-content: space-between;
