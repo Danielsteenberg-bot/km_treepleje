@@ -8,7 +8,6 @@
 .card-section-h3 {
     text-align: center;
     font-size: var(--large);
-    color: var(--white);
     margin-top: 60px;
 }
 .card-wrapper {
@@ -27,7 +26,6 @@
     border: 3px solid var(--white);
     border-radius: 5px;
     margin-bottom: 20px;
-    color: var(--white);
 }
 .last-card {
     margin-bottom: 60px;
@@ -54,35 +52,6 @@
     font-size: var(--mediumLarge);
     margin-top:  20px;
 }
-.card-button {
-    background-color: var(--red);
-    border: none;
-    color: var(--white);
-    width: 100px;
-    cursor: pointer;
-}
-hr {
-    width: 125px;
-    height: 3px;
-    background-color: var(--red);
-    border-color: var(--red);
-    color: var(--red);
-    border-style: solid;
-    margin-top: 15px;
-}
-.card-p{
-    font-size: 20px;
-    font-weight: bold;
-}
-.arrow-wrapper {
-    margin: 25px 0 20px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transition: .25s;
-}
-.forsikret {
-    text-align: center;
-    line-height: 35px;
-}
+
+
 

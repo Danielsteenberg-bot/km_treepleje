@@ -18,6 +18,7 @@
 }
 body {
     background-color: var(--green);
+    color: var(--white);
 }
 
 li {
@@ -75,7 +76,6 @@ a:visited {
     justify-content: center;
 }
 .fa-bars {
-    color: var(--white);
 }
 .fa-bars:hover {
     cursor: pointer;
@@ -84,7 +84,6 @@ a:visited {
     display: none;
 }
 .fa-xmark {
-    color: var(--white);
 }
 .fa-xmark:hover {
     cursor: pointer;
@@ -125,7 +124,6 @@ a:visited {
     display: flex;
     justify-content: center;
     background-color: #1D2E1B;
-    color: var(--white);
     width: 100%;
     height: 100vh;
     transition-duration: .4s;
@@ -172,7 +170,6 @@ a:visited {
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
-        color: var(--white);
     }
     .desktop-navigation-li {
         margin-right: 50px;
@@ -195,8 +192,6 @@ a:visited {
 .footer{
     background-color: black;
     font-family: 'Titillium Web';
-    color: white;
-    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -251,17 +246,14 @@ a:visited {
 }
 
 .footer-services{
-    color: white;
     text-decoration: none;
 }
 .footer-contact{
-    color: white;
     text-decoration: none;
 }
 
 .footer-about{
     text-decoration: none;
-    color: white;
 }
 
 .footer-bund-copyright-tekst-fullscreen{
@@ -288,7 +280,6 @@ a:visited {
     display: none;
     position: absolute;
     top: 65%;
-    color: white;
     left: 45%;
     }
 
