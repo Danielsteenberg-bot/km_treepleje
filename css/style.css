@@ -218,9 +218,26 @@ a:visited {
 .footer-info-container {
     margin-bottom: 30px;
 }
-.footer-h3 {
-    font-size: var(--small);
-    font-weight: 600;
+
+.footer-info-point {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.footer-phone-icon {
+    height: 16px;
+    margin-right: 7px
+}
+.footer-email-icon {
+    height: 10px;
+    margin-right: 7px
+}
+.footer-pin-icon {
+    height: 20px;
+    margin-right: 7px
+}
+.cvr-point {
+    margin-left: 20px;
 }
 
 
