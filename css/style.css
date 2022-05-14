@@ -264,6 +264,9 @@ a:visited {
         align-items: center;
         justify-content: space-around;
     }
+    .footer-info-container {
+        margin-bottom: 0px;
+    }
     .footer-menu-links-wrapper {
         display: flex;
         flex-direction: column;
