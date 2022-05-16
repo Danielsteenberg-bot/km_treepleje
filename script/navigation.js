@@ -1,3 +1,33 @@
+/* Desktop Navigation animations */
+let desktopFoldout = document.querySelector(".desktop-foldout")
+let desktopArrow = document.querySelector(".desktop-arrow")
+
+
+desktopArrow.addEventListener("click", desktopNavDrop)
+
+function desktopNavDrop() {
+    
+    if(desktopFoldout.style.height == "0px") {
+        desktopFoldout.style.height = "280px"
+        desktopArrow.style.transform = "rotate(180deg)"
+    }
+    else {
+        desktopFoldout.style.height = "0px"
+        desktopArrow.style.transform = "rotate(0deg)"
+    }
+}
+
+function desktopNavDropCancel() {
+    if(desktopFoldout.style.height == "280px") {
+        desktopFoldout.style.height = "0px"
+        desktopArrow.style.transform = "rotate(0deg)"
+    }
+}
+
+
+
+
+/* Mobile navigation animations */
 let Navbar = document.querySelector(".navbar")
 let BurgerCrossWrapper = document.getElementById("burger-cross-wrapper")
 let bars = document.getElementById("burger")
@@ -34,9 +64,9 @@ let servicesMenuPoint = document.querySelector(".services")
 let servicesDivWrapper = document.querySelector(".navigation-accordion")
 let serviceArrow = document.querySelector(".fold-out-arrow")
 
-servicesMenuPoint.addEventListener("click", function() {
+serviceArrow.addEventListener("click", function() {
     if (servicesDivWrapper.style.height <= "0px") {
-        servicesDivWrapper.style.height = "280px"
+        servicesDivWrapper.style.height = "245px"
         serviceArrow.style.transform = "rotate(180deg)"
     }
     else {
