@@ -8,6 +8,13 @@
     text-align: center;
     font-size: var(--large);
     margin-top: 60px;
+    opacity: 0;
+}
+.fade-in {
+    animation: fadeIn 1s forwards;
+}
+@keyframes fadeIn {
+    to {opacity: 1;}
 }
 .card-wrapper {
     display: flex;
@@ -25,7 +32,19 @@
     border: 3px solid var(--white);
     border-radius: 5px;
     margin-bottom: 20px;
+    margin-right: 50px;
+    opacity: 0;
 }
+.cards-moving {
+    animation: cardsMoveInPlaceMobile .7s forwards ;
+}
+@keyframes cardsMoveInPlaceMobile {
+    to {
+        opacity: 1;
+        margin-right: 0;
+    }
+}
+
 .last-card {
     margin-bottom: 60px;
 }
@@ -52,7 +71,8 @@
     margin-top:  20px;
 }
 
-@media only screen and (min-width: 500px) {
+
+@media only screen and (min-width: 550px) {
     .card-section {
         min-height: 100vh;
         display: flex;
@@ -66,6 +86,16 @@
     }
     .card {
         margin: 20px;
+
+    }
+    .cards-moving {
+        animation: cardsMoveInPlaceDesktop 2s forwards ;
+    }
+    @keyframes cardsMoveInPlaceDesktop {
+        to {
+            opacity: 1;
+            margin-right: 20px;
+        }
     }
     .contact-spacer {
         height: 50px;
