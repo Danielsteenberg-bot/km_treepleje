@@ -9,9 +9,11 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/cover.css">
     <link rel="stylesheet" href="css/card-section.css">
-    <link rel="stylesheet" href="css/services.css">
+    <link rel="stylesheet" href="css/contact-section.css">
+    <link rel="stylesheet" href="css/about-section.css">
     <!-- Script -->
     <script defer src="script/navigation.js"></script>
+    <script defer src="script/cover-section.js"></script>
     <script defer src="script/card-section.js"></script>
     <!-- Font awesome -->
     <script src="https://kit.fontawesome.com/9eb3bf195d.js" crossorigin="anonymous"></script>
@@ -43,9 +45,31 @@
             <div class="desktop-navigation">
                 <ul class="desktop-navigation-ul">
                     <li class="desktop-navigation-li"><a href="#">Hjem</a></li>
-                    <li class="desktop-navigation-li"><a href="">Services</a></li>
-                    <li class="desktop-navigation-li"><a href="">Galleri</a></li>
-                    <li class="desktop-navigation-li"><a href="">Om Os</a></li>
+
+                    <div class="services-container">
+                        <li class="desktop-navigation-li"><a href="#cards"class="a-desktop" onclick="desktopNavDropCancel()">Services</a><img class="desktop-arrow" src="assets/navigation/arrow-white.png" alt=""></li>
+
+                        <div class="desktop-foldout" style="height: 0px;">
+                            <div class="desktop-ul-container" >
+                                <ul class="desktop-ul">
+                                    <li class="navigation-accordion-li"><a href="traefaeldning.html">Træfældning</a></li>
+                                    <li class="navigation-accordion-li"><a href="topkapning.html">Topkapning</a></li>
+                                    <li class="navigation-accordion-li"><a href="haekkeklipning.html">Hækkeklipning</a></li>
+                                    <li class="navigation-accordion-li"><a href="rodfraesning.html">Rodfræsning</a></li>
+                                    <li class="navigation-accordion-li"><a href="flishugning.html">Flishugning</a></li>
+                                    <li class="navigation-accordion-li"><a href="beskaering.html">Beskæring</a></li>
+                                    <li class="navigation-accordion-li"><a href="risikovurdering.html">Risikovurdering
+                                    </a></li>
+                                    <li class="navigation-accordion-li"><a href="forsikret-og-doegnvagt.html">Forsikring</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <li 
+                    class="desktop-navigation-li"><a href="#contact">Kontakt</a></li>
+
+                    <li class="desktop-navigation-li"><a href="#about">Om Os</a></li>
                 </ul>
             </div>
         </div>
@@ -64,10 +88,24 @@
 <div class="hidden-navigation-wrapper">
     <div id="hidden-navigation" class="hidden-navigation" style="left: -100vw;">
         <ul>
-            <li class="hidden-navigation-li"><a href="">HJEM</a></li>
-            <li class="hidden-navigation-li"><a href="">SERVICES</a></li>
-            <li class="hidden-navigation-li"><a href="">GALLERI</a></li>
-            <li class="hidden-navigation-li"><a href="">KONTAKT</a></li>
+            <li class="hidden-navigation-li"><a href="#" onclick="popOutNavbar()">HJEM</a></li>
+            <li class="hidden-navigation-li services"><a href="#cards" onclick="popOutNavbar()">SERVICES</a><img class="fold-out-arrow" src="assets/navigation/arrow-white.png" alt="arrow">
+                <div class="navigation-accordion" style="height: 0px;">
+                    <ul>
+                        <li class="navigation-accordion-li"><a href="traefaeldning.html">Træfældning</a></li>
+                        <li class="navigation-accordion-li"><a href="topkapning.html">Topkapning</a></li>
+                        <li class="navigation-accordion-li"><a href="haekkeklipning.html">Hækkeklipning</a></li>
+                        <li class="navigation-accordion-li"><a href="rodfraesning.html">Rodfræsning</a></li>
+                        <li class="navigation-accordion-li"><a href="flishugning.html">Flishugning</a></li>
+                        <li class="navigation-accordion-li"><a href="beskaering.html">Beskæring</a></li>
+                        <li class="navigation-accordion-li"><a href="risikovurdering.html">Risikovurdering
+                        </a></li>
+                        <li class="navigation-accordion-li"><a href="forsikret-og-doegnvagt.html">Forsikring</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="hidden-navigation-li"><a href="#contact" onclick="popOutNavbar()">KONTAKT</a></li>
+            <li class="hidden-navigation-li"><a href="#about" onclick="popOutNavbar()">OM OS</a></li>
         </ul>
     </div>
 </div>
@@ -75,57 +113,53 @@
 
 
 
-
-
-
-
-
-
-
-
-    <!-- Footer Start -->
-    <footer class="footer">
-        <div class="footer-container">
-            <h1 class="footer-logo-overskrift">
-                KM TRÆPLEJE
-            </h1>
-            <div class="footer-logo-container">
-            <img class="footer-logo" src="/assets/footer/km-logo-hvid.png" alt="tekst del af km logo">
-            <img class="footer-logo" src="/assets/footer/km-logo-hvirvel_hvid.png" alt="Hvirvel del af km logo">
-        </div>
-            <h2 class="footer-logo-under-tekst">
-                KVALITETS <br>
-               <span class="footer-logo-under-tekst-bund"> TRÆPLEJE! </span>
-            </h2>
-        </div>
-
-        <div class="footer-info-container">
-            <div class="footer-info">
-                <h3 class="footer-info-mail">Mail: KM-pleje.dk</h3>
-                <h3 class="footer-info-tlf">TLF: 00 11 22 33</h3>
-                <h3 class="footer-info-cvr">Cvr: 11 22 33 44</h3>
-                <h3 class="footer-info-adresse">Skaldehøjvej 2 8800 Viborg</h3>
+     <!-- Footer Start -->
+     <footer class="footer-section">
+        <div class="footer-content-wrapper">
+            <div class="footer-logo-text-container">
+                <h1 class="footer-logo-h1">
+                    KM TRÆPLEJE
+                </h1>
+                <div class="footer-logo-container">
+                    <img class="footer-logo" src="assets/footer/logo-original-large.png" alt="">
+                </div>
+                <h2 class="footer-logo-under-tekst">
+                    KVALITETS <br>
+                <span class="footer-logo-under-tekst-bund"> TRÆPLEJE! </span>
+                </h2>
             </div>
-        </div>
 
-        <div class="footer-bund-container">
-            <div class="footer-bund-facebook">
-                <a class="footer-facebook" href=""><img src="/assets/footer/facebook-icon.png" alt="facebook logo"></a>
-                <a href="" class="footer-services">Services</a>
-                <a href="" class="footer-contact">Kontakt</a>
-                <a href="" class="footer-about">Om Os</a>
-            </div>
-            <div class="footer-bund-copyright">
-                <h5 class="footer-bund-copyright-tekst-small">
-                    Copyright resserved KM træpleje <i class="fa-solid fa-copyright"></i>
-                </h5>
-            </div>
-        </div>
+            <div class="footer-info-container">
+                <div class="footer-info">
+                    
+                    
+                    <a class="footer-info-point" href="tel:+45-40-62-22-17"><img class="footer-phone-icon" src="assets/footer/phone-icon.png" alt="">TLF: +45 40 62 22 17</a>
 
+                    <a class="footer-info-point" href="https://mail.google.com/mail/?view=cm&fs=1&to=kennethmarquart@gmail.com" target=”_blank”><img class="footer-email-icon" src="assets/footer/email-icon.png" alt="">Mail: kennethmarquart@gmail.com</a>
+                    
+                    <a class="footer-info-point" href="https://goo.gl/maps/vY3zJjvhYbGckeCr5" target=”_blank”><img class="footer-pin-icon" src="assets/footer/pin-icon.png" alt="">Adresse: Resenfeldevej 40, <br> 7470 Karup </a>
+
+                    <p class="footer-info-point cvr-point" href="">Cvr: 31564077</p>
+                    
+                </div>
+            </div>
+
+            <div class="footer-bund-container">   
+
+                    <div class="footer-menu-links-wrapper">
+                        <a class="footer-menu-link footer-facebook" href=""><img class="footer-facebook" src="/assets/footer/facebook-icon.png" alt="facebook logo"></a>
+                        <a class="footer-menu-link" href="#">Services</a>
+                        <a class="footer-menu-link" href="#">Kontakt</a>
+                        <a class="footer-menu-link" href="#">Om Os</a>
+                    </div>
+
+            </div>
+
+            
+        </div>
+        <p class="copyright">Copyright 2022 by KM-Træpleje</p>
     </footer>
-    <div class="footer-copyright-fullscreen">
-        <h5 class="footer-bottom-copyright-text-fullscreen">Copyright resserved KM træpleje<i class="fa-solid fa-copyright"></i> </h5>
-    </div>
+
 
 
     <!-- Footer end -->
