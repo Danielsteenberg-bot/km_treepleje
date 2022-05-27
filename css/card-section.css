@@ -65,6 +65,7 @@
 }
 .card-icon {
     height: 100px;
+    transition: .3s;
 }
 .card-h2 {
     font-size: var(--mediumLarge);
