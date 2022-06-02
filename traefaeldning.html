@@ -24,11 +24,11 @@
 <body>
     
     <!-- Navbar -->
-    <nav class="navbar navbar-underpage">
+    <nav class="navbar">
 
         <!-- ------- Left side -->
         <div class="navbar-left">
-            <a class="logo-link" href="index.html">
+            <a class="logo-link" href="#">
                 <img class="logo" src="assets/navigation/Logo-original.png">
             </a>
         </div>
@@ -43,10 +43,37 @@
             <!-- ------- Desktop version -->
             <div class="desktop-navigation">
                 <ul class="desktop-navigation-ul">
-                    <li class="desktop-navigation-li"><a href="#">Hjem</a></li>
-                    <li class="desktop-navigation-li"><a href="">Services</a></li>
-                    <li class="desktop-navigation-li"><a href="">Galleri</a></li>
-                    <li class="desktop-navigation-li"><a href="">Om Os</a></li>
+                        <li class="desktop-navigation-li"><a href="#">Hjem</a></li>
+
+                    <div class="services-container">
+                        <li class="desktop-navigation-li service-border-none"><a href="#cards"class="a-desktop" onclick="desktopNavDropCancel()">Services</a>
+                        </li>
+
+                        <div class="desktop-foldout" style="height: 0px;">
+                            <div class="desktop-ul-container" >
+                                <ul class="desktop-ul">
+                                    <li class="navigation-accordion-li"><a href="traefaeldning.html">Træfældning</a></li>
+                                    <li class="navigation-accordion-li"><a href="topkapning.html">Topkapning</a></li>
+                                    <li class="navigation-accordion-li"><a href="haekkeklipning.html">Hækkeklipning</a></li>
+                                    <li class="navigation-accordion-li"><a href="rodfraesning.html">Rodfræsning</a></li>
+                                    <li class="navigation-accordion-li"><a href="flishugning.html">Flishugning</a></li>
+                                    <li class="navigation-accordion-li"><a href="beskaering.html">Beskæring</a></li>
+                                    <li class="navigation-accordion-li"><a href="risikovurdering.html">Risikovurdering
+                                    </a></li>
+                                    <li class="navigation-accordion-li"><a href="forsikret-og-doegnvagt.html">Forsikring</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="desktop-arrow-container">
+                        <img class="desktop-arrow" src="assets/navigation/arrow-white.png" alt="">
+                    </div>
+                    
+                    <li 
+                    class="desktop-navigation-li"><a href="#contact">Kontakt</a></li>
+
+                    <li class="desktop-navigation-li"><a href="#about">Om Os</a></li>
                 </ul>
             </div>
         </div>
@@ -62,11 +89,11 @@
     </nav>
 
 <!-- -------------------Hidden navigation -->
-<div class="hidden-navigation-wrapper" style="left: -100vw;">
-    <div id="hidden-navigation" class="hidden-navigation" >
+<div class="hidden-navigation-wrapper">
+    <div id="hidden-navigation" class="hidden-navigation" style="left: -100vw;">
         <ul>
-            <li class="hidden-navigation-li"><a href="">HJEM</a></li>
-            <li class="hidden-navigation-li services ">SERVICES <img class="fold-out-arrow" src="assets/underpage-assets/arrow-white.png" alt="arrow">
+            <li class="hidden-navigation-li"><a href="#" onclick="popOutNavbar()">HJEM</a></li>
+            <li class="hidden-navigation-li services"><a href="#cards" onclick="popOutNavbar()">SERVICES</a><img class="fold-out-arrow" src="assets/navigation/arrow-white.png" alt="arrow">
                 <div class="navigation-accordion" style="height: 0px;">
                     <ul>
                         <li class="navigation-accordion-li"><a href="traefaeldning.html">Træfældning</a></li>
@@ -77,15 +104,16 @@
                         <li class="navigation-accordion-li"><a href="beskaering.html">Beskæring</a></li>
                         <li class="navigation-accordion-li"><a href="risikovurdering.html">Risikovurdering
                         </a></li>
-                        <li class="navigation-accordion-li last-li-accordion"><a href="forsikret-og-doegnvagt.html">Forsikret <br> & <br> Døgnvagt</a></li>
+                        <li class="navigation-accordion-li"><a href="forsikret-og-doegnvagt.html">Forsikring</a></li>
                     </ul>
                 </div>
             </li>
-            <li class="hidden-navigation-li"><a href="">GALLERI</a></li>
-            <li class="hidden-navigation-li"><a href="">KONTAKT</a></li>
+            <li class="hidden-navigation-li"><a href="#contact" onclick="popOutNavbar()">KONTAKT</a></li>
+            <li class="hidden-navigation-li"><a href="#about" onclick="popOutNavbar()">OM OS</a></li>
         </ul>
     </div>
 </div>
+<!-- Nav Slut -->
 
 <!-- services Underpage Section -->
 <section class="underpage-container">
