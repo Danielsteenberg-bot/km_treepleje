@@ -290,7 +290,7 @@ border: 2px solid var(--white);
 .footer-info-point {
     display: flex;
     align-items: center;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
 }
 .footer-phone-icon {
     height: 16px;
@@ -311,6 +311,9 @@ border: 2px solid var(--white);
 
 
 /* Footer links og soMe */
+
+
+
 .footer-menu-links-wrapper {
     margin-bottom: 30px;
 }
@@ -343,13 +346,27 @@ border: 2px solid var(--white);
     .footer-menu-link {
         margin-bottom: 10px;
     }
+
+    .footer-bund-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
 @media only screen and (min-width: 1200px) {
     .footer-menu-links-wrapper {
-        flex-direction: row;
+        flex-direction: column;
         margin-top: 30px;
+        font: 2vw;
     }
-    .footer-menu-link {
+
+    .footer-menu-link a{
+        font-size: 10vw;
+    }
+
+    .footer-menu-link  {
         margin-bottom: 0px;
     }
+
 }
