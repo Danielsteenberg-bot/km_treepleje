@@ -1,24 +1,38 @@
 .navbar-underpage {
     position: static;
 }
+
+.navbar{
+    top: 0%;
+}
+
 .underpage-container {
     max-width: 1280px;
     min-height: 100vh;
-    background-color: var(--grey);
+    background-color: var(--green);
     margin: 30px auto 30px auto;
-    box-shadow: 5px 5px 3px 1px rgba(0,0,0,0.52);
     border-radius: 5px;
     display: flex;
     flex-direction: column;
+    padding-top: 2.5rem;
     
 }
 
 .underpage-icon-container {
     margin: 30px 30px;
+
 }
 .underpage-icon {
     width: 100%;
+    padding: 5%;
 }
+
+.border-container{
+    width: 100%;
+    border: 3px solid white;    
+
+}
+
 .underpage-text-container {
     margin: 0 30px;
 }
@@ -42,15 +56,15 @@
 .checkmark-one {
     display: flex;
     align-items: center;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
 }
 .checkmark-img {
-    max-height: 50px;
+    max-height: 45px;
 }
 .checkmark-h3-one {
-    font-size: var(--mediumLarge);
+    font-size: var(--small);
     font-weight: 600;
-    margin-left: 30px;
+    margin-left: 10px;
 }
 .underpage-img-wrapper-desktop {
     display: none;
@@ -61,7 +75,7 @@
     margin: 30px 0;
     width: 100%;
 }
-.underpage-img-one, .underpage-img-two {
+.underpage-img-one, .underpage-img-two, .underpage-img-three {
     max-width: 40%;
     border-radius: 3px;
     cursor: pointer;
@@ -93,11 +107,39 @@
 }
 
 @media only screen and (min-width: 768px) {
+
+    .underpage-icon {
+        width: 100%;
+        padding: 5%;
+        display: flex;
+        align-items: center;
+    }
+
+    .underpage-icon-desktop-container{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .border-container{
+        width: 100%;
+        border: 5px solid white;
+        display: flex;
+        justify-content: center; 
+    
+    }
+
+    .checkmark-h3-one{
+        font-size: var(--medium);
+    }
+
     .underpage-container {
         flex-direction: row;
     }
     .underpage-icon-container {
-        margin: 30px 0 30px 30px;
+        margin: 30px 60px 0px 60px;
+        width: 100%;
     }
     .underpage-text-container {
         margin: 30px 30px 0 20px;
@@ -114,10 +156,28 @@
         margin: 0px 0;
         width: 101%;
     }
-    .underpage-img-one, .underpage-img-two {
-        max-width: 49%;
+    .underpage-img-one, .underpage-img-two,.underpage-img-three{
+        max-width: 33%;
+        padding: 1%;
     }
     .underpage-text-container {
         max-width: 50%;
     }
+
+    .certificate-image{
+        width: 100px;
+    }
+
+    .certificate-container{
+        display: flex;
+        justify-content: center;
+    }
+
+    .certifacte-text-container{
+        display: flex;
+        align-items: center;
+        padding-left: 15px;
+    }
+    
+
 }
