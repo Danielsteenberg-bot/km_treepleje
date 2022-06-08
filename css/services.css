@@ -8,7 +8,6 @@
 
 .underpage-container {
     max-width: 1280px;
-    min-height: 100vh;
     background-color: var(--green);
     margin: 30px auto 30px auto;
     border-radius: 5px;
@@ -29,7 +28,7 @@
 
 .border-container{
     width: 100%;
-    border: 3px solid white;    
+    border: 10px solid white;    
 
 }
 
@@ -62,7 +61,7 @@
     max-height: 45px;
 }
 .checkmark-h3-one {
-    font-size: var(--small);
+    font-size: var(--medium);
     font-weight: 600;
     margin-left: 10px;
 }
@@ -105,6 +104,32 @@
     max-width: 90%;
     max-height: 90vh;
 }
+
+
+/* Certifikat linje */
+
+.certificate-image{
+    max-width: 90px;
+}
+
+.certificate-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.certifacte-text-container{
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    font-size: var(--medium);
+
+}
+
+
+/* Certifikat linje */
 
 @media only screen and (min-width: 768px) {
 
@@ -162,22 +187,12 @@
     }
     .underpage-text-container {
         max-width: 50%;
+        padding-top: 20px;
     }
 
-    .certificate-image{
-        width: 100px;
-    }
 
-    .certificate-container{
-        display: flex;
-        justify-content: center;
-    }
 
-    .certifacte-text-container{
-        display: flex;
-        align-items: center;
-        padding-left: 15px;
-    }
+
     
 
 }
