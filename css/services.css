@@ -55,7 +55,7 @@
 .checkmark-one {
     display: flex;
     align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 45px;
 }
 .checkmark-img {
     max-height: 45px;
@@ -117,7 +117,8 @@
     justify-content: center;
     flex-direction: row;
     align-items: center;
-    margin-bottom: 2rem;
+    padding-bottom: 60px;
+    padding-top: 60px;
 }
 
 .certifacte-text-container{
