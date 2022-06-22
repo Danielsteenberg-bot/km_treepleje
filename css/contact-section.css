@@ -1,11 +1,8 @@
 .contact-container {
     width: 100%;
     height: 100vh;
-<<<<<<< HEAD
-    min-height: 643px;
-=======
     min-height: 640px;
->>>>>>> underside
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -99,11 +96,7 @@
         background-size: cover;
         background-position: center;
         height: 100vh;
-<<<<<<< HEAD
-        min-height: 643px;
-=======
         min-height: 640px;
->>>>>>> underside
     }
     .contact-img-opacity {
         width: 100%;
