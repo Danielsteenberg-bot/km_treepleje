@@ -304,24 +304,20 @@ border: 2px solid var(--white);
     height: 20px;
     margin-right: 7px
 }
-/* .cvr-point {
-    margin-left: 20px;
-} */
+.footer-cvr-icon {
+    height: 15px;
+    margin-right: 7px
+}
 
 
 
 /* Footer links og soMe */
 
-
-
 .footer-menu-links-wrapper {
     margin-bottom: 30px;
 }
-.footer-menu-link {
-    margin-left: 20px;
-}
 .footer-facebook {
-    width: 25px;
+    width: 40px;
 }
 .copyright {
     text-align: center;
