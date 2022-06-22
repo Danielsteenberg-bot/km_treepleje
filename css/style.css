@@ -183,6 +183,7 @@ border: 2px solid var(--white);
     height: 100vh;
     transition: .3s;
     z-index: 1;
+    display: none;
 }
 .hidden-navigation {
     position: absolute;

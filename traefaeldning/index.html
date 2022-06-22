@@ -10,10 +10,12 @@
     <link rel="stylesheet" href="../css/cover.css">
     <link rel="stylesheet" href="../css/card-section.css">
     <link rel="stylesheet" href="../css/services.css">
-    <!-- Script -->
+
+
+
     <script defer src="../script/navigation.js"></script>
-    <script defer src="../script/card-section.js"></script>
     <script defer src="../script/underpage.js"></script>
+
     <!-- Font awesome -->
     <script src="https://kit.fontawesome.com/9eb3bf195d.js" crossorigin="anonymous"></script>
     <!-- Google Fonts -->
@@ -92,7 +94,7 @@
     <div id="hidden-navigation" class="hidden-navigation" style="left: -100vw;">
         <ul>
             <li class="hidden-navigation-li"><a href="#" onclick="popOutNavbar()">HJEM</a></li>
-            <li class="hidden-navigation-li services"><a href="#cards" onclick="popOutNavbar()">SERVICES</a><img class="fold-out-arrow" src="assets/navigation/arrow-white.png" alt="arrow">
+            <li class="hidden-navigation-li services"><a href="#cards" onclick="popOutNavbar()">SERVICES</a><img class="fold-out-arrow" src="../assets/navigation/arrow-white.png" alt="arrow">
                 <div class="navigation-accordion" style="height: 0px;">
                     <ul>
                         <li class="navigation-accordion-li"><a href="traefaeldning/index.html">Træfældning</a></li>
@@ -118,20 +120,37 @@
     <div class="underpage-container">
     <div class="underpage-icon-container">
         <div class="underpage-icon-desktop-container">
+
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
         <div class="border-container">
-        <img class="underpage-icon" src="../assets/underpage-assets/icon-traefaeldning.png" alt="">
-    </div>
-</div>
-        <div class="underpage-img-wrapper-desktop">
-
-            <img class="underpage-img-one underpage-img" src="../assets/underpage-assets/trees-sun_cover.jpg" alt="">
-
-            <img class="underpage-img-two underpage-img" src="../assets/underpage-assets/trees_cover.jpg" alt="S">
-
-            <img class="underpage-img-three underpage-img" src="../assets/underpage-assets/trees-sun_cover.jpg" alt="">
-
+                <img class="slider-img" src="../assets/underpage-assets/icon-traefaeldning.png" style="width:100%">
+            </div>
         </div>
-    </div>
+  
+        <div class="mySlides fade">
+            <div class="border-container">
+                    <img class="slider-img" src="../assets/underpage-assets/icon-top-kapning.png" style="width:100%">
+                </div>
+            </div>
+  
+            <div class="mySlides fade">
+                <div class="border-container">
+                        <img class="slider-img" src="../assets/underpage-assets/icon-flishugning.png" style="width:100%">
+                    </div>
+                </div>
+  
+    <!-- Next and previous buttons -->
+  </div>
+  <br>
+  
+
+ </div>
+ </div>
+
         <div class="underpage-text-container">
             <div class="underpage-text-wrapper">
                 <h1 class="underpage-h1">Træfældning</h1>
@@ -161,11 +180,7 @@
                 </div>
 
             </div>
-<!--            <div class="underpage-img-wrapper">
-                <img class="underpage-img-one underpage-img" src="../assets/underpage-assets/trees-sun_cover.jpg" alt="">
 
-                <img class="underpage-img-two underpage-img" src="../assets/underpage-assets/trees_cover.jpg" alt="S">
-            </div> -->
         </div>
     </div>
         <div class="certificate-container">
@@ -179,9 +194,7 @@
         </div>
 </section>
 
-<!-- <section class="certificate-line">
 
-</section> -->
 
 
  <!-- Footer Start -->
