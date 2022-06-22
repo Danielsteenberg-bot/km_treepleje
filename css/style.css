@@ -181,7 +181,7 @@ border: 2px solid var(--white);
     overflow: hidden;
     width: 100%;
     height: 100vh;
-    transition: .3s;
+    transition: .4s;
     z-index: 1;
 }
 .hidden-navigation {
