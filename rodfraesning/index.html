@@ -6,15 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KM-Træpleje</title>
     <!-- Css -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/cover.css">
-    <link rel="stylesheet" href="../css/card-section.css">
     <link rel="stylesheet" href="../css/services.css">
 
-
-
+    <!-- Script -->
+    <script defer src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script defer src="../script/navigation.js"></script>
-    <script defer src="../script/underpage.js"></script>
+    <script defer src="../script/slide.js"></script>
 
     <!-- Font awesome -->
     <script src="https://kit.fontawesome.com/9eb3bf195d.js" crossorigin="anonymous"></script>
@@ -120,71 +119,48 @@
     <div class="underpage-container">
     <div class="underpage-icon-container">
         <div class="underpage-icon-desktop-container">
+            <!-- Slider main container -->
+<div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
 
-<!-- Slideshow container -->
-<div class="slideshow-container">
+      <div class="swiper-slide"><img class="slider-img" src="../assets/underpage-assets/icon_rodfraeser.png"></div>
+      <div class="swiper-slide"><img class="slider-img" src="../assets/underpage-assets/faeldning1.jpg"></div>
+      <div class="swiper-slide"><img class="slider-img" src="../assets/underpage-assets/faeldning2.jpg"></div>
+      <div class="swiper-slide"><img class="slider-img" src="../assets/underpage-assets/faeldning3.jpg"></div>
+    </div>
 
-    <!-- Full-width images with number and caption text -->
-    <div class="mySlides fade">
-        <div class="border-container">
-                <img class="slider-img" src="../assets/underpage-assets/icon-traefaeldning.png" style="width:100%">
-            </div>
-        </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
   
-        <div class="mySlides fade">
-                    <img class="slider-img" src="../assets/underpage-assets/faeldning1.jpg" style="width:100%">
-            </div>
-  
-            <div class="mySlides fade">
-                        <img class="slider-img" src="../assets/underpage-assets/faeldning2.jpg" style="width:100%">
-                </div>
-            <div class="mySlides fade">
-                        <img class="slider-img" src="../assets/underpage-assets/faeldning3.jpg" style="width:100%">
-                </div>
-  
-    <!-- Next and previous buttons -->
-
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-  
-  <div class="dots">
-    <span class="dot" onclick="currentSlide(1)"></span>
-    <span class="dot" onclick="currentSlide(2)"></span>
-    <span class="dot" onclick="currentSlide(3)"></span>
-  </div>
-
-  </div>
-  <br>
-  
-
- </div>
- </div>
-
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+</div>
+</div>  
+</div>
         <div class="underpage-text-container">
             <div class="underpage-text-wrapper">
-                <h1 class="underpage-h1">Træfældning</h1>
-                <p class="underpage-p">I de fleste tilfælde har træerne i haven en historie. Måske har du eller familien selv plantet træet,
-                    da du var lille, fik dit første barn eller blev gift og de er som regel svære at skille sig af med, men
-                    fra tid til anden er det en nødvendighed at få træerne fjernet.</p>
-                <h2 class="underpage-h2-cleaning">Hvorfor fjerne træet?</h2>
-                <p class="underpage-p-cleaning">De skygger for solen, ødelægger tag og murværk, er blevet sygt eller står simpelthen
-                    det forkerte sted i haven. Uanset grunden kan vi fælde det eller beskære det og samtidig
-                    beskytte havens øvrig beplantning og træer.</p>
+                <h1 class="underpage-h1">Rodfræsning</h1>
+                <p class="underpage-p">I forbindelse med fældning af træer, er det en god ide at rodfræse roden, så der er mulighed for at bruge pladsen og jorden til græsplæne eller måske sætte et ny træ</p>
+                <h2 class="underpage-h2-cleaning">Hvad fræser vi med?</h2>
+                <p class="underpage-p-cleaning">Vi rodfræser med en Vermeer SC30TX, den er 90 cm bred og 240 cm lang og kører på bælter.  Der er næsten ingen steder hvor vi ikke kan komme til og ingen rod er for stor eller for lille til rodfræsning, den fræser i en dybde på 20-30 cm.</p>
     
                 <div class="checkmark-container">
                     <div class="checkmark-one">
                         <img class="checkmark-img" src="../assets/underpage-assets/tic-mark-white.png" alt="Tic mark">
-                    <h3 class="checkmark-h3-one">Uanset placeringen af træet klare KM opgaven</h3>
+                    <h3 class="checkmark-h3-one">Uanset placeringen klare KM opgaven</h3>
                     </div>
 
                     <div class="checkmark-one">
                         <img class="checkmark-img" src="../assets/underpage-assets/tic-mark-white.png" alt="Tic mark">
-                    <h3 class="checkmark-h3-one">Træet kan skæres ned i mindre stykker og fældes</h3>
+                    <h3 class="checkmark-h3-one">Vi rodfræser med Vermeer SC30TX</h3>
                     </div>
 
                     <div class="checkmark-one">
                         <img class="checkmark-img" src="../assets/underpage-assets/tic-mark-white.png" alt="Tic mark">
-                        <h3 class="checkmark-h3-one">Vi Tilbyder bortskaffelse evt. rodfræsning eller omskæring</h3>
+                        <h3 class="checkmark-h3-one">Vi Tilbyder bortskaffelse</h3>
                     </div>
                 </div>
 
