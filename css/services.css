@@ -84,27 +84,6 @@
 }
 
 
-/* Lightbox */
- #lightbox {
-     display: none;
-     position: fixed;
-     top: 0;
-     z-index: 1000;
-     height: 100%;
-     width: 100%;
-     background-color: rgb(0, 0, 0, .7);
- }
-
-#lightbox.active {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.lightbox-img {
-    max-width: 90%;
-    max-height: 90vh;
-}
-
 
 /* Certifikat linje */
 
@@ -165,7 +144,7 @@
     }
     .underpage-icon-container {
         margin: 30px 60px 0px 60px;
-        width: 100%;
+        width: 50%;
     }
     .underpage-text-container {
         margin: 30px 30px 0 20px;
@@ -180,20 +159,40 @@
         display: flex;
         justify-content: start;
         margin: 0px 0;
-        width: 101%;
+        width: 100%;
     }
-    .underpage-img-one, .underpage-img-two,.underpage-img-three{
-        max-width: 33%;
-        padding: 1%;
-    }
+
     .underpage-text-container {
         max-width: 50%;
         padding-top: 20px;
     }
 
-
-
-
-    
-
 }
+
+
+/* Slide show */
+
+.swiper {
+    width: 100%;
+  }
+
+  .slider-img{
+      width: 100%;
+  }
+
+  .swiper-button-next:after{
+      color: var(--white);
+  }
+  .swiper-button-prev:after{
+      color: var(--white);
+  }
+
+  
+  .swiper-horizontal.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{
+    color: var(--white);
+    background-color: var(--white);
+
+  }
+
+
+/* Slide show */

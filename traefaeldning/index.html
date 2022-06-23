@@ -6,14 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KM-Træpleje</title>
     <!-- Css -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/cover.css">
-    <link rel="stylesheet" href="../css/card-section.css">
     <link rel="stylesheet" href="../css/services.css">
+
     <!-- Script -->
+    <script defer src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script defer src="../script/navigation.js"></script>
-    <script defer src="../script/card-section.js"></script>
-    <script defer src="../script/underpage.js"></script>
+    <script defer src="../script/slide.js"></script>
+
     <!-- Font awesome -->
     <script src="https://kit.fontawesome.com/9eb3bf195d.js" crossorigin="anonymous"></script>
     <!-- Google Fonts -->
@@ -92,7 +93,7 @@
     <div id="hidden-navigation" class="hidden-navigation" style="left: -100vw;">
         <ul>
             <li class="hidden-navigation-li"><a href="#" onclick="popOutNavbar()">HJEM</a></li>
-            <li class="hidden-navigation-li services"><a href="#cards" onclick="popOutNavbar()">SERVICES</a><img class="fold-out-arrow" src="assets/navigation/arrow-white.png" alt="arrow">
+            <li class="hidden-navigation-li services"><a href="#cards" onclick="popOutNavbar()">SERVICES</a><img class="fold-out-arrow" src="../assets/navigation/arrow-white.png" alt="arrow">
                 <div class="navigation-accordion" style="height: 0px;">
                     <ul>
                         <li class="navigation-accordion-li"><a href="traefaeldning/index.html">Træfældning</a></li>
@@ -118,20 +119,28 @@
     <div class="underpage-container">
     <div class="underpage-icon-container">
         <div class="underpage-icon-desktop-container">
-        <div class="border-container">
-        <img class="underpage-icon" src="../assets/underpage-assets/icon-traefaeldning.png" alt="">
-    </div>
-</div>
-        <div class="underpage-img-wrapper-desktop">
 
-            <img class="underpage-img-one underpage-img" src="../assets/underpage-assets/trees-sun_cover.jpg" alt="">
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+            
+                  <div class="swiper-slide"><img class="slider-img" alt="KM træfældnings logo" src="../assets/underpage-assets/faeldning/icon-traefaeldning.png"></div>
+                  <div class="swiper-slide"><img class="slider-img" alt="KM godt igang" src="../assets/underpage-assets/faeldning/faeldning1.jpg"></div>
+                  <div class="swiper-slide"><img class="slider-img" alt="Et træ før KM er igang" src="../assets/underpage-assets/faeldning/faeldning2.jpg"></div>
+                  <div class="swiper-slide"><img class="slider-img" alt="KM er godt igang" src="../assets/underpage-assets/faeldning/faeldning3.jpg"></div>
+                </div>
+            
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+              
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+  </div>
+ </div>
 
-            <img class="underpage-img-two underpage-img" src="../assets/underpage-assets/trees_cover.jpg" alt="S">
-
-            <img class="underpage-img-three underpage-img" src="../assets/underpage-assets/trees-sun_cover.jpg" alt="">
-
-        </div>
-    </div>
         <div class="underpage-text-container">
             <div class="underpage-text-wrapper">
                 <h1 class="underpage-h1">Træfældning</h1>
@@ -161,11 +170,7 @@
                 </div>
 
             </div>
-<!--            <div class="underpage-img-wrapper">
-                <img class="underpage-img-one underpage-img" src="../assets/underpage-assets/trees-sun_cover.jpg" alt="">
 
-                <img class="underpage-img-two underpage-img" src="../assets/underpage-assets/trees_cover.jpg" alt="S">
-            </div> -->
         </div>
     </div>
         <div class="certificate-container">
@@ -177,11 +182,10 @@
                      Ligeledes er alt arbejde dækket af godkendte forsikringer.</h2>
             </div>    
         </div>
+    </div>
 </section>
 
-<!-- <section class="certificate-line">
 
-</section> -->
 
 
  <!-- Footer Start -->
@@ -192,7 +196,7 @@
                 KM TRÆPLEJE
             </h1>
             <div class="footer-logo-container">
-                <img class="footer-logo" src="../assets/footer/logo-original-large.png" alt="">
+                <img class="footer-logo" src="../assets/footer/logo-original-large.png" alt="KM - LOGO">
             </div>
             <h2 class="footer-logo-under-tekst">
                 KVALITETS <br>
@@ -206,13 +210,13 @@
                 <!-- Evt have et logo at smide ind til cvr se eksempel dog i forkert farve. -->
                 
                 
-                <a class="footer-info-point" href="tel:+45-40-62-22-17"><img class="footer-phone-icon" src="../assets/footer/phone-icon.png" alt="">TLF: +45 40 62 22 17</a>
+                <a class="footer-info-point" href="tel:+45-40-62-22-17"><img class="footer-phone-icon" src="../assets/footer/phone-icon.png" alt="telefon - LOGO">TLF: +45 40 62 22 17</a>
 
-                <a class="footer-info-point" href="https://mail.google.com/mail/?view=cm&fs=1&to=kennethmarquart@gmail.com" target=”_blank”><img class="footer-email-icon" src="../assets/footer/email-icon.png" alt="">Mail: kennethmarquart@gmail.com</a>
+                <a class="footer-info-point" href="https://mail.google.com/mail/?view=cm&fs=1&to=kennethmarquart@gmail.com" target=”_blank”><img class="footer-email-icon" src="../assets/footer/email-icon.png" alt="Mail - LOGO">Mail: kennethmarquart@gmail.com</a>
                 
-                <a class="footer-info-point" href="https://goo.gl/maps/vY3zJjvhYbGckeCr5" target=”_blank”><img class="footer-pin-icon" src="../assets/footer/pin-icon.png" alt="">Adresse: Resenfeldevej 40, 7470 Karup </a>
+                <a class="footer-info-point" href="https://goo.gl/maps/vY3zJjvhYbGckeCr5" target=”_blank”><img class="footer-pin-icon" src="../assets/footer/pin-icon.png" alt="Lokation - LOGO">Adresse: Resenfeldevej 40, 7470 Karup </a>
 
-                <p class="footer-info-point cvr-point" href=""><img class="footer-pin-icon cvr-icon" src="../assets/footer/cvr.png" alt="">Cvr: 31564077</p>
+                <p class="footer-info-point cvr-point" href=""><img class="footer-pin-icon cvr-icon" src="../assets/footer/cvr.png" alt="CVR - LOGO">Cvr: 31564077</p>
                 
             </div>
         </div>

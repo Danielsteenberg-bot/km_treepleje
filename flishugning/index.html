@@ -6,15 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KM-Træpleje</title>
     <!-- Css -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/cover.css">
-    <link rel="stylesheet" href="../css/card-section.css">
-    <link rel="stylesheet" href="../css/contact-section.css">
-    <link rel="stylesheet" href="../css/about-section.css">
+    <link rel="stylesheet" href="../css/services.css">
     <!-- Script -->
+    <script defer src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script defer src="../script/navigation.js"></script>
-    <script defer src="../script/cover-section.js"></script>
-    <script defer src="../script/card-section.js"></script>
+    <script defer src="../script/slide.js"></script>
     <!-- Font awesome -->
     <script src="https://kit.fontawesome.com/9eb3bf195d.js" crossorigin="anonymous"></script>
     <!-- Google Fonts -->
@@ -93,7 +91,7 @@
     <div id="hidden-navigation" class="hidden-navigation" style="left: -100vw;">
         <ul>
             <li class="hidden-navigation-li"><a href="#" onclick="popOutNavbar()">HJEM</a></li>
-            <li class="hidden-navigation-li services"><a href="#cards" onclick="popOutNavbar()">SERVICES</a><img class="fold-out-arrow" src="assets/navigation/arrow-white.png" alt="arrow">
+            <li class="hidden-navigation-li services"><a href="#cards" onclick="popOutNavbar()">SERVICES</a><img class="fold-out-arrow" src="../assets/navigation/arrow-white.png" alt="arrow">
                 <div class="navigation-accordion" style="height: 0px;">
                     <ul>
                         <li class="navigation-accordion-li"><a href="../traefaeldning/index.html">Træfældning</a></li>
@@ -115,64 +113,131 @@
 <!-- Nav slut -->
 
 
-<!-- Content -->
 
-<h1>Flis flækker</h1>
+<!-- services Underpage Section -->
+<section>
+    <div class="underpage-container">
+    <div class="underpage-icon-container">
+        <div class="underpage-icon-desktop-container">
+            <!-- Slider main container -->
+<div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
 
-<!-- Content End -->
+      <div class="swiper-slide"><img class="slider-img" src="../assets/underpage-assets/flishugning/icon-flishugning.png"></div>
+      <div class="swiper-slide"><img class="slider-img" src="../assets/underpage-assets/flishugning/flishugning.jpg"></div>
 
- <!-- Footer Start -->
- <footer class="footer-section">
-    <div class="footer-content-wrapper">
-        <div class="footer-logo-text-container">
-            <h1 class="footer-logo-h1">
-                KM TRÆPLEJE
-            </h1>
-            <div class="footer-logo-container">
-                <img class="footer-logo" src="../assets/footer/logo-original-large.png" alt="">
-            </div>
-            <h2 class="footer-logo-under-tekst">
-                KVALITETS <br>
-            <span class="footer-logo-under-tekst-bund"> TRÆPLEJE! </span>
-            </h2>
-        </div>
+    </div>
 
-        <div class="footer-info-container">
-            <div class="footer-info">
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+</div>
+</div>  
+</div>
+        <div class="underpage-text-container">
+            <div class="underpage-text-wrapper">
+                <h1 class="underpage-h1">Flishugning</h1>
+                <p class="underpage-p">I forbindelse med oprydningsarbejdet efter en fældning eller beskæring har vi mulighed for at flishugge træet og vi kan selvfølgelig sørge for bortskaffelse eller I har mulighed for selv at beholde flisset.</p>
+                <h2 class="underpage-h2-cleaning">Hvad hugger vi med?</h2>
+                <p class="underpage-p-cleaning">Vi bruger en Först TR6P, som kører på bælter og derfor kan den komme frem overalt. Den 110 cm bred og 270 cm lang</p>
+    
+                <div class="checkmark-container">
+                    <div class="checkmark-one">
+                        <img class="checkmark-img" src="../assets/underpage-assets/tic-mark-white.png" alt="Tic mark">
+                    <h3 class="checkmark-h3-one">Uanset placeringen klare KM opgaven</h3>
+                    </div>
 
-                <!-- Evt have et logo at smide ind til cvr se eksempel dog i forkert farve. -->
-                
-                
-                <a class="footer-info-point" href="tel:+45-40-62-22-17"><img class="footer-phone-icon" src="../assets/footer/phone-icon.png" alt="">TLF: +45 40 62 22 17</a>
+                    <div class="checkmark-one">
+                        <img class="checkmark-img" src="../assets/underpage-assets/tic-mark-white.png" alt="Tic mark">
+                    <h3 class="checkmark-h3-one">Kan tilbydes i forbindelse med enkeltstående eller i forbindelse med anden opgave</h3>
+                    </div>
 
-                <a class="footer-info-point" href="https://mail.google.com/mail/?view=cm&fs=1&to=kennethmarquart@gmail.com" target=”_blank”><img class="footer-email-icon" src="../assets/footer/email-icon.png" alt="">Mail: kennethmarquart@gmail.com</a>
-                
-                <a class="footer-info-point" href="https://goo.gl/maps/vY3zJjvhYbGckeCr5" target=”_blank”><img class="footer-pin-icon" src="../assets/footer/pin-icon.png" alt="">Adresse: Resenfeldevej 40, 7470 Karup </a>
-
-                <p class="footer-info-point cvr-point" href="">Cvr: 31564077</p>
-                
-            </div>
-        </div>
-
-        <div class="footer-bund-container">   
-
-                <div class="footer-menu-links-wrapper">
-                    <a class="footer-menu-link footer-facebook" href=""><img class="footer-facebook" src="../assets/footer/facebook-icon.png" alt="facebook logo"></a>
-                    <a class="footer-menu-link" href="#">Services</a>
-                    <a class="footer-menu-link" href="#">Kontakt</a>
-                    <a class="footer-menu-link" href="#">Om Os</a>
+                    <div class="checkmark-one">
+                        <img class="checkmark-img" src="../assets/underpage-assets/tic-mark-white.png" alt="Tic mark">
+                        <h3 class="checkmark-h3-one">Vi Tilbyder bortskaffelse aftales i forbindelse med tilbud</h3>
+                    </div>
                 </div>
 
+            </div>
+
         </div>
-
-        
     </div>
-    <p class="copyright">Copyright 2022 by KM-Træpleje</p>
-</footer>
+        <div class="certificate-container">
+            <div class="certifact-image-container">
+                <img class="certificate-image" src="../assets/underpage-assets/certifikat-logo.png" alt="Certifikat logo">
+            </div>
+            <div class="certifacte-text-container">
+                <h2 class="certifikat">Alle opgaver udføres med godkendt sikkerhedsudstyr.<br>
+                     Ligeledes er alt arbejde dækket af godkendte forsikringer.</h2>
+            </div>    
+        </div>
+</section>
 
 
 
-<!-- Footer end -->
+
+
+
+
+    <!-- Footer Start -->
+    <footer class="footer-section">
+        <div class="footer-content-wrapper">
+            <a href="">
+                <div class="footer-logo-text-container">
+                    <h1 class="footer-logo-h1">
+                        KM TRÆPLEJE
+                    </h1>
+                    <div class="footer-logo-container">
+                        <img class="footer-logo" src="../assets/footer/logo-original-large.png" alt="">
+                    </div>
+                    <h2 class="footer-logo-under-tekst">
+                        KVALITETS <br>
+                    <span class="footer-logo-under-tekst-bund"> TRÆPLEJE! </span>
+                    </h2>
+                </div>
+            </a>
+
+            <div class="footer-info-container">
+                <div class="footer-info">
+                    
+                    <div class="footer-info-left-top">
+                        <a class="footer-info-point" href="tel:+45-40-62-22-17"><img class="footer-phone-icon" src="../assets/footer/phone-icon.png" alt="">TLF: +45 40 62 22 17</a>
+
+                        <a class="footer-info-point" href="https://mail.google.com/mail/?view=cm&fs=1&to=kennethmarquart@gmail.com" target=”_blank”><img class="footer-email-icon" src="../assets/footer/email-icon.png" alt="">Mail: kennethmarquart@gmail.com</a>
+                    </div>
+
+                    <div class="footer-info-right-bottom">
+                        <a class="footer-info-point" href="https://goo.gl/maps/vY3zJjvhYbGckeCr5" target=”_blank”><img class="footer-pin-icon" src="../assets/footer/pin-icon.png" alt="">Adresse: Resenfeldevej 40, <br class="adress-br"> 7470 Karup </a>
+
+                        <p class="footer-info-point cvr-point" href=""><img class="footer-cvr-icon" src="../assets/footer/briefcase_cvr.png" alt=""> CVR: 31564077</p>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="footer-bund-container">   
+
+                    <div class="footer-menu-links-wrapper">
+                        <a href=""><img class="footer-facebook" src="../assets/footer/facebook-icon.png" alt="facebook logo"></a>
+
+                        <a href="#"><img class="footer-return-arrow" src="../assets/footer/footer_return_arrow.png" alt=""></a>
+                    </div>
+
+            </div>
+
+            
+        </div>
+        <p class="copyright">Copyright 2022 by KM-Træpleje</p>
+    </footer>
+
+
+
+    <!-- Footer end -->
         
 
 </body>
