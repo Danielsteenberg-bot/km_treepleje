@@ -9,7 +9,7 @@ desktopArrowContainer.addEventListener("click", desktopNavDrop)
 function desktopNavDrop() {
     
     if(desktopFoldout.style.height == "0px") {
-        desktopFoldout.style.height = "298px"
+        desktopFoldout.style.height = "334px"
         desktopArrow.style.transform = "rotate(180deg)"
     }
     else {
@@ -69,7 +69,7 @@ let serviceArrow = document.querySelector(".fold-out-arrow")
 
 serviceArrow.addEventListener("click", function() {
     if (servicesDivWrapper.style.height <= "0px") {
-        servicesDivWrapper.style.height = "265px"
+        servicesDivWrapper.style.height = "300px"
         serviceArrow.style.transform = "rotate(180deg)"
     }
     else {
