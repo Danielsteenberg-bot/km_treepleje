@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KM-Træpleje</title>
     <!-- Css -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="../css/style.css">
-
     <link rel="stylesheet" href="../css/services.css">
     <!-- Script -->
+    <script defer src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script defer src="../script/navigation.js"></script>
-
-    <script defer src="../script/underpage.js"></script>
+    <script defer src="../script/slide.js"></script>
     <!-- Font awesome -->
     <script src="https://kit.fontawesome.com/9eb3bf195d.js" crossorigin="anonymous"></script>
     <!-- Google Fonts -->
@@ -22,222 +22,223 @@
 </head>
 <body>
     
-    <!-- Navbar -->
-    <nav class="navbar">
+   <!-- Navbar -->
+   <nav class="navbar">
 
-        <!-- ------- Left side -->
-        <div class="navbar-left">
-            <a class="logo-link" href="../index.html">
-                <img class="logo" src="../assets/navigation/Logo-original.png">
-            </a>
+    <!-- ------- Left side -->
+    <div class="navbar-left">
+        <a class="logo-link" href="../index.html">
+            <img class="logo" src="../assets/navigation/Logo-original.png">
+        </a>
+    </div>
+
+    <!-- ------ Middle -->
+    <div class="navbar-middle">
+        <div id="burger-cross-wrapper">
+            <i id="burger" class="fa-solid fa-bars fa-xl"></i>
+            <i id="cross" class="fa-solid fa-xmark fa-2xl"></i>
         </div>
 
-        <!-- ------ Middle -->
-        <div class="navbar-middle">
-            <div id="burger-cross-wrapper">
-                <i id="burger" class="fa-solid fa-bars fa-xl"></i>
-                <i id="cross" class="fa-solid fa-xmark fa-2xl"></i>
-            </div>
+        <!-- ------- Desktop version -->
+        <div class="desktop-navigation">
+            <ul class="desktop-navigation-ul">
+                    <li class="desktop-navigation-li"><a href="../index.html">Hjem</a></li>
 
-            <!-- ------- Desktop version -->
-            <div class="desktop-navigation">
-                <ul class="desktop-navigation-ul">
-                        <li class="desktop-navigation-li"><a href="../index.html">Hjem</a></li>
+                <div class="services-container">
+                    <li class="desktop-navigation-li service-border-none"><a href="#cards"class="a-desktop" onclick="desktopNavDropCancel()">Services</a>
+                    </li>
 
-                    <div class="services-container">
-                        <li class="desktop-navigation-li service-border-none"><a href="#cards"class="a-desktop" onclick="desktopNavDropCancel()">Services</a>
-                        </li>
-
-                        <div class="desktop-foldout" style="height: 0px;">
-                            <div class="desktop-ul-container" >
-                                <ul class="desktop-ul">
-                                    <li class="navigation-accordion-li"><a href="../traefaeldning/index.html">Træfældning</a></li>
-                                    <li class="navigation-accordion-li"><a href="../topkapning/index.html">Topkapning</a></li>
-                                    <li class="navigation-accordion-li"><a href="../haekkeklipning/index.html">Hækkeklipning</a></li>
-                                    <li class="navigation-accordion-li"><a href="../rodfraesning/index.html">Rodfræsning</a></li>
-                                    <li class="navigation-accordion-li"><a href="../flishugning/index.html">Flishugning</a></li>
-                                    <li class="navigation-accordion-li"><a href="../beskaering/index.html">Beskæring</a></li>
-                                    <li class="navigation-accordion-li"><a href="../risikovurdering/index.html">Risikovurdering</a></li>
-                                    <li class="navigation-accordion-li"><a href="../forsikret-og-doegnvagt/index.html">Forsikret <br> & <br> Døgnvagt</a></li>
-                                </ul>
-                            </div>
+                    <div class="desktop-foldout" style="height: 0px;">
+                        <div class="desktop-ul-container" >
+                            <ul class="desktop-ul">
+                                <li class="navigation-accordion-li"><a href="../traefaeldning/index.html">Træfældning</a></li>
+                                <li class="navigation-accordion-li"><a href="topkapning/index.html">Topkapning</a></li>
+                                <li class="navigation-accordion-li"><a href="../haekkeklipning/index.html">Hækkeklipning</a></li>
+                                <li class="navigation-accordion-li"><a href="../rodfraesning/index.html">Rodfræsning</a></li>
+                                <li class="navigation-accordion-li"><a href="../flishugning/index.html">Flishugning</a></li>
+                                <li class="navigation-accordion-li"><a href="../beskaering/index.html">Beskæring</a></li>
+                                <li class="navigation-accordion-li"><a href="../risikovurdering/index.html">Risikovurdering</a></li>
+                                <li class="navigation-accordion-li"><a href="../forsikret/index.html">Forsikret</a></li>
+                                <li class="navigation-accordion-li"><a href="../stormfald">Stormfald</a></li>
+                            </ul>
                         </div>
                     </div>
+                </div>
 
-                    <div class="desktop-arrow-container">
-                        <img class="desktop-arrow" src="../assets/navigation/arrow-white.png" alt="">
-                    </div>
-                    
-                    <li 
-                    class="desktop-navigation-li"><a href="#contact">Kontakt</a></li>
+                <div class="desktop-arrow-container">
+                    <img class="desktop-arrow" src="../assets/navigation/arrow-white.png" alt="">
+                </div>
+                
+                <li 
+                class="desktop-navigation-li"><a href="#contact">Kontakt</a></li>
 
-                    <li class="desktop-navigation-li"><a href="#about">Om Os</a></li>
-                </ul>
-            </div>
+                <li class="desktop-navigation-li"><a href="#about">Om Os</a></li>
+            </ul>
         </div>
+    </div>
 
-        <!-- ---------Right side -->
-        <div class="navbar-right">
-            <a class="navbar-facebook-link" target="_blank"href="https://www.facebook.com/KM-Tr%C3%A6pleje-594615387603785/">
-                <img class="facebook-icon" src="../assets/navigation/facebook-icon_1.png" alt="">
-            </a>
-        </div>
+    <!-- ---------Right side -->
+    <div class="navbar-right">
+        <a class="navbar-facebook-link" target="_blank"href="https://www.facebook.com/KM-Tr%C3%A6pleje-594615387603785/">
+            <img class="facebook-icon" src="../assets/navigation/facebook-icon_1.png" alt="">
+        </a>
+    </div>
 
 
-    </nav>
+</nav>
 
 <!-- -------------------Hidden navigation -->
-<div class="hidden-navigation-wrapper">
-    <div id="hidden-navigation" class="hidden-navigation" style="left: -100vw;">
-        <ul>
-            <li class="hidden-navigation-li"><a href="#" onclick="popOutNavbar()">HJEM</a></li>
-            <li class="hidden-navigation-li services"><a href="#cards" onclick="popOutNavbar()">SERVICES</a><img class="fold-out-arrow" src="../assets/navigation/arrow-white.png" alt="arrow">
-                <div class="navigation-accordion" style="height: 0px;">
-                    <ul>
-                        <li class="navigation-accordion-li"><a href="../traefaeldning/index.html">Træfældning</a></li>
-                        <li class="navigation-accordion-li"><a href="../topkapning/index.html">Topkapning</a></li>
-                        <li class="navigation-accordion-li"><a href="../haekkeklipning/index.html">Hækkeklipning</a></li>
-                        <li class="navigation-accordion-li"><a href="../rodfraesning/index.html">Rodfræsning</a></li>
-                        <li class="navigation-accordion-li"><a href="../flishugning/index.html">Flishugning</a></li>
-                        <li class="navigation-accordion-li"><a href="../beskaering/index.html">Beskæring</a></li>
-                        <li class="navigation-accordion-li"><a href="../risikovurdering/index.html">Risikovurdering</a></li>
-                        <li class="navigation-accordion-li last-li-accordion"><a href="../forsikret-og-doegnvagt/index.html">Forsikret <br> & <br> Døgnvagt</a></li>
-                    </ul>
-                </div>
-            </li>
-            <li class="hidden-navigation-li"><a href="#contact" onclick="popOutNavbar()">KONTAKT</a></li>
-            <li class="hidden-navigation-li"><a href="#about" onclick="popOutNavbar()">OM OS</a></li>
-        </ul>
-    </div>
+<div class="hidden-navigation-wrapper" style="left: -100vw;">
+<div id="hidden-navigation" class="hidden-navigation" style="left: -100vw;">
+    <ul>
+        <li class="hidden-navigation-li"><a href="#" onclick="popOutNavbar()">HJEM</a></li>
+        <li class="hidden-navigation-li services"><a href="#cards" onclick="popOutNavbar()">SERVICES</a><img class="fold-out-arrow" src="../assets/navigation/arrow-white.png" alt="arrow">
+            <div class="navigation-accordion" style="height: 0px;">
+                <ul>
+                    <li class="navigation-accordion-li"><a href="../traefaeldning/index.html">Træfældning</a></li>
+                    <li class="navigation-accordion-li"><a href="topkapning/index.html">Topkapning</a></li>
+                    <li class="navigation-accordion-li"><a href="../haekkeklipning/index.html">Hækkeklipning</a></li>
+                    <li class="navigation-accordion-li"><a href="../rodfraesning/index.html">Rodfræsning</a></li>
+                    <li class="navigation-accordion-li"><a href="../flishugning/index.html">Flishugning</a></li>
+                    <li class="navigation-accordion-li"><a href="../beskaering/index.html">Beskæring</a></li>
+                    <li class="navigation-accordion-li"><a href="../risikovurdering/index.html">Risikovurdering</a></li>
+                    <li class="navigation-accordion-li"><a href="../forsikret/index.html">Forsikret</a></li>
+                    <li class="navigation-accordion-li last-li-accordion"><a href="../stormfald">Stormfald</a></li>
+                </ul>
+            </div>
+        </li>
+        <li class="hidden-navigation-li"><a href="#contact" onclick="popOutNavbar()">KONTAKT</a></li>
+        <li class="hidden-navigation-li"><a href="#about" onclick="popOutNavbar()">OM OS</a></li>
+    </ul>
+</div>
 </div>
 <!-- Nav slut -->
 
+<!-- services Underpage Section -->
+<section>
+    <div class="underpage-container">
+    <div class="underpage-icon-container">
+        <div class="underpage-icon-desktop-container">
+            <!-- Slider main container -->
+<div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
 
-<!-- Content START -->
-
-<!-- Slideshow container -->
-<div class="slideshow-container">
-
-    <!-- Full-width images with number and caption text -->
-    <div class="mySlides fade">
-      <div class="numbertext">1 / 3</div>
-      <img src="../assets/underpage-assets/icon-top-kapning.png" style="width:50%">
-      <div class="text">Caption Text</div>
-    </div>
-  
-    <div class="mySlides fade">
-      <div class="numbertext">2 / 3</div>
-      <img src="../assets/underpage-assets/icon-top-kapning.png" style="width:50%">
-      <div class="text">Caption Two</div>
-    </div>
-  
-    <div class="mySlides fade">
-      <div class="numbertext">3 / 3</div>
-      <img src="../assets/underpage-assets/icon-top-kapning.png" style="width:50%">
-      <div class="text">Caption Three</div>
-    </div>
-  
-    <!-- Next and previous buttons -->
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-  </div>
-  <br>
-  
-  <!-- The dots/circles -->
-  <div style="text-align:center">
-    <span class="dot" onclick="currentSlide(1)"></span>
-    <span class="dot" onclick="currentSlide(2)"></span>
-    <span class="dot" onclick="currentSlide(3)"></span>
-  </div>
-
-
-  <div class="underpage-text-container">
-    <div class="underpage-text-wrapper">
-        <h1 class="underpage-h1">Træfældning</h1>
-        <p class="underpage-p">I de fleste tilfælde har træerne i haven en historie. Måske har du eller familien selv plantet træet,
-            da du var lille, fik dit første barn eller blev gift og de er som regel svære at skille sig af med, men
-            fra tid til anden er det en nødvendighed at få træerne fjernet.</p>
-        <h2 class="underpage-h2-cleaning">Hvorfor fjerne træet?</h2>
-        <p class="underpage-p-cleaning">De skygger for solen, ødelægger tag og murværk, er blevet sygt eller står simpelthen
-            det forkerte sted i haven. Uanset grunden kan vi fælde det eller beskære det og samtidig
-            beskytte havens øvrig beplantning og træer.</p>
-
-        <div class="checkmark-container">
-            <div class="checkmark-one">
-                <img class="checkmark-img" src="../assets/underpage-assets/tic-mark-white.png" alt="Tic mark">
-            <h3 class="checkmark-h3-one">Uanset placeringen af træet klare KM opgaven</h3>
-            </div>
-
-            <div class="checkmark-one">
-                <img class="checkmark-img" src="../assets/underpage-assets/tic-mark-white.png" alt="Tic mark">
-            <h3 class="checkmark-h3-one">Træet kan skæres ned i mindre stykker og fældes</h3>
-            </div>
-
-            <div class="checkmark-one">
-                <img class="checkmark-img" src="../assets/underpage-assets/tic-mark-white.png" alt="Tic mark">
-                <h3 class="checkmark-h3-one">Vi Tilbyder bortskaffelse evt. rodfræsning eller omskæring</h3>
-            </div>
-        </div>
-
+      <div class="swiper-slide"><img class="slider-img" alt="KM topkapning logo" src="../assets/underpage-assets/topkapning/icon-top-kapning.png"></div>
+      <div class="swiper-slide"><img class="slider-img" alt="KM godt i gang med en at udfører en topkapning" src="../assets/underpage-assets/topkapning/topkapning.jpg"></div>
+      <div class="swiper-slide"><img class="slider-img" alt="Et træ uden en topkapning" src="../assets/underpage-assets/topkapning/topkapning_2.jpg"></div>
+      <div class="swiper-slide"><img class="slider-img" alt="KM godt i gang med en at udfører en topkapning" src="../assets/underpage-assets/topkapning/topkapning_3.jpg"></div>
     </div>
 
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
 </div>
-<!-- Content START -->
+</div>  
+</div>
+        <div class="underpage-text-container">
+            <div class="underpage-text-wrapper">
+                <h1 class="underpage-h1">Topkapning</h1>
+                <p class="underpage-p">Topkapning er en metode hvor man skærer træet ned fra toppen, i de tilfælde hvor det ikke er muligt at fælde træet ved jorden. Dette er en teknik der også bruges ved beskæring.</p>
+                <h2 class="underpage-h2-cleaning">"Skal jeg selv ryde op?"</h2>
+                <p class="underpage-p-cleaning">Om vi skal hjælpe med oprydningen, aftaler vi ved gennemgang af opgaven eller om du selv vil stå for det.</p>
+    
+                <div class="checkmark-container">
+                    <div class="checkmark-one">
+                        <img class="checkmark-img" src="../assets/underpage-assets/tic-mark-white.png" alt="Tic mark">
+                    <h3 class="checkmark-h3-one">Uanset placeringen klare KM opgaven</h3>
+                    </div>
 
+                    <div class="checkmark-one">
+                        <img class="checkmark-img" src="../assets/underpage-assets/tic-mark-white.png" alt="Tic mark">
+                    <h3 class="checkmark-h3-one">??????</h3>
+                    </div>
 
- <!-- Footer Start -->
- <footer class="footer-section">
-    <div class="footer-content-wrapper">
-        <div class="footer-logo-text-container">
-            <h1 class="footer-logo-h1">
-                KM TRÆPLEJE
-            </h1>
-            <div class="footer-logo-container">
-                <img class="footer-logo" src="../assets/footer/logo-original-large.png" alt="">
-            </div>
-            <h2 class="footer-logo-under-tekst">
-                KVALITETS <br>
-            <span class="footer-logo-under-tekst-bund"> TRÆPLEJE! </span>
-            </h2>
-        </div>
-
-        <div class="footer-info-container">
-            <div class="footer-info">
-
-                <!-- Evt have et logo at smide ind til cvr se eksempel dog i forkert farve. -->
-                
-                
-                <a class="footer-info-point" href="tel:+45-40-62-22-17"><img class="footer-phone-icon" src="../assets/footer/phone-icon.png" alt="">TLF: +45 40 62 22 17</a>
-
-                <a class="footer-info-point" href="https://mail.google.com/mail/?view=cm&fs=1&to=kennethmarquart@gmail.com" target=”_blank”><img class="footer-email-icon" src="../assets/footer/email-icon.png" alt="">Mail: kennethmarquart@gmail.com</a>
-                
-                <a class="footer-info-point" href="https://goo.gl/maps/vY3zJjvhYbGckeCr5" target=”_blank”><img class="footer-pin-icon" src="../assets/footer/pin-icon.png" alt="">Adresse: Resenfeldevej 40, 7470 Karup </a>
-
-                <p class="footer-info-point cvr-point" href="">Cvr: 31564077</p>
-                
-            </div>
-        </div>
-
-        <div class="footer-bund-container">   
-
-                <div class="footer-menu-links-wrapper">
-                    <a class="footer-menu-link footer-facebook" href=""><img class="footer-facebook" src="../assets/footer/facebook-icon.png" alt="facebook logo"></a>
-                    <a class="footer-menu-link" href="#">Services</a>
-                    <a class="footer-menu-link" href="#">Kontakt</a>
-                    <a class="footer-menu-link" href="#">Om Os</a>
+                    <div class="checkmark-one">
+                        <img class="checkmark-img" src="../assets/underpage-assets/tic-mark-white.png" alt="Tic mark">
+                        <h3 class="checkmark-h3-one">Vi Tilbyder bortskaffelse aftales i forbindelse med tilbud</h3>
+                    </div>
                 </div>
 
+            </div>
+
         </div>
-
-        
     </div>
-    <p class="copyright">Copyright 2022 by KM-Træpleje</p>
-</footer>
+        <div class="certificate-container">
+            <div class="certifact-image-container">
+                <img class="certificate-image" src="../assets/underpage-assets/certifikat-logo.png" alt="Certifikat logo">
+            </div>
+            <div class="certifacte-text-container">
+                <h2 class="certifikat">Alle opgaver udføres med godkendt sikkerhedsudstyr.<br>
+                     Ligeledes er alt arbejde dækket af godkendte forsikringer.</h2>
+            </div>    
+        </div>
+</section>
 
 
 
-<!-- Footer end -->
 
+
+
+
+    <!-- Footer Start -->
+    <footer class="footer-section">
+        <div class="footer-content-wrapper">
+            <a href="">
+                <div class="footer-logo-text-container">
+                    <h1 class="footer-logo-h1">
+                        KM TRÆPLEJE
+                    </h1>
+                    <div class="footer-logo-container">
+                        <img class="footer-logo" src="../assets/footer/logo-original-large.png" alt="">
+                    </div>
+                    <h2 class="footer-logo-under-tekst">
+                        KVALITETS <br>
+                    <span class="footer-logo-under-tekst-bund"> TRÆPLEJE! </span>
+                    </h2>
+                </div>
+            </a>
+
+            <div class="footer-info-container">
+                <div class="footer-info">
+                    
+                    <div class="footer-info-left-top">
+                        <a class="footer-info-point" href="tel:+45-40-62-22-17"><img class="footer-phone-icon" src="../assets/footer/phone-icon.png" alt="">TLF: +45 40 62 22 17</a>
+
+                        <a class="footer-info-point" href="https://mail.google.com/mail/?view=cm&fs=1&to=kennethmarquart@gmail.com" target=”_blank”><img class="footer-email-icon" src="../assets/footer/email-icon.png" alt="">Mail: kennethmarquart@gmail.com</a>
+                    </div>
+
+                    <div class="footer-info-right-bottom">
+                        <a class="footer-info-point" href="https://goo.gl/maps/vY3zJjvhYbGckeCr5" target=”_blank”><img class="footer-pin-icon" src="../assets/footer/pin-icon.png" alt="">Adresse: Resenfeldevej 40, <br class="adress-br"> 7470 Karup </a>
+
+                        <p class="footer-info-point cvr-point" href=""><img class="footer-cvr-icon" src="../assets/footer/briefcase_cvr.png" alt=""> CVR: 31564077</p>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="footer-bund-container">   
+
+                    <div class="footer-menu-links-wrapper">
+                        <a href=""><img class="footer-facebook" src="../assets/footer/facebook-icon.png" alt="facebook logo"></a>
+
+                        <a href="#"><img class="footer-return-arrow" src="../assets/footer/footer_return_arrow.png" alt=""></a>
+                    </div>
+
+            </div>
+
+            
+        </div>
+        <p class="copyright">Copyright 2022 by KM-Træpleje</p>
+    </footer>
+
+
+
+    <!-- Footer end -->
         
 
 </body>

@@ -6,15 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KM-Træpleje</title>
     <!-- Css -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/cover.css">
-    <link rel="stylesheet" href="../css/card-section.css">
-    <link rel="stylesheet" href="../css/contact-section.css">
-    <link rel="stylesheet" href="../css/about-section.css">
+    <link rel="stylesheet" href="../css/services.css">
     <!-- Script -->
+    <script defer src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script defer src="../script/navigation.js"></script>
-    <script defer src="../script/cover-section.js"></script>
-    <script defer src="../script/card-section.js"></script>
+    <script defer src="../script/slide.js"></script>
     <!-- Font awesome -->
     <script src="https://kit.fontawesome.com/9eb3bf195d.js" crossorigin="anonymous"></script>
     <!-- Google Fonts -->
@@ -58,8 +56,8 @@
                                 <li class="navigation-accordion-li"><a href="../haekkeklipning/index.html">Hækkeklipning</a></li>
                                 <li class="navigation-accordion-li"><a href="../rodfraesning/index.html">Rodfræsning</a></li>
                                 <li class="navigation-accordion-li"><a href="../flishugning/index.html">Flishugning</a></li>
-                                <li class="navigation-accordion-li"><a href="../beskaering/index.html">Beskæring</a></li>
-                                <li class="navigation-accordion-li"><a href="risikovurdering/index.html">Risikovurdering</a></li>
+                                <li class="navigation-accordion-li"><a href="beskaering/index.html">Beskæring</a></li>
+                                <li class="navigation-accordion-li"><a href="../risikovurdering/index.html">Risikovurdering</a></li>
                                 <li class="navigation-accordion-li"><a href="../forsikret/index.html">Forsikret</a></li>
                                 <li class="navigation-accordion-li"><a href="../stormfald">Stormfald</a></li>
                             </ul>
@@ -102,8 +100,8 @@
                     <li class="navigation-accordion-li"><a href="../haekkeklipning/index.html">Hækkeklipning</a></li>
                     <li class="navigation-accordion-li"><a href="../rodfraesning/index.html">Rodfræsning</a></li>
                     <li class="navigation-accordion-li"><a href="../flishugning/index.html">Flishugning</a></li>
-                    <li class="navigation-accordion-li"><a href="../beskaering/index.html">Beskæring</a></li>
-                    <li class="navigation-accordion-li"><a href="risikovurdering/index.html">Risikovurdering</a></li>
+                    <li class="navigation-accordion-li"><a href="beskaering/index.html">Beskæring</a></li>
+                    <li class="navigation-accordion-li"><a href="../risikovurdering/index.html">Risikovurdering</a></li>
                     <li class="navigation-accordion-li"><a href="../forsikret/index.html">Forsikret</a></li>
                     <li class="navigation-accordion-li last-li-accordion"><a href="../stormfald">Stormfald</a></li>
                 </ul>
@@ -116,8 +114,6 @@
 </div>
 <!-- Nav slut -->
 
-
-
 <!-- services Underpage Section -->
 <section>
     <div class="underpage-container">
@@ -129,10 +125,10 @@
     <div class="swiper-wrapper">
       <!-- Slides -->
 
-      <div class="swiper-slide"><img class="slider-img" src="../assets/underpage-assets/icon_rodfraeser.png"></div>
-      <div class="swiper-slide"><img class="slider-img" src="../assets/underpage-assets/faeldning1.jpg"></div>
-      <div class="swiper-slide"><img class="slider-img" src="../assets/underpage-assets/faeldning2.jpg"></div>
-      <div class="swiper-slide"><img class="slider-img" src="../assets/underpage-assets/faeldning3.jpg"></div>
+      <div class="swiper-slide"><img class="slider-img" alt="KM topkapning logo" src="../assets/underpage-assets/topkapning/icon-top-kapning.png"></div>
+      <div class="swiper-slide"><img class="slider-img" alt="KM godt i gang med en at udfører en topkapning" src="../assets/underpage-assets/topkapning/topkapning.jpg"></div>
+      <div class="swiper-slide"><img class="slider-img" alt="Et træ uden en topkapning" src="../assets/underpage-assets/topkapning/topkapning_2.jpg"></div>
+      <div class="swiper-slide"><img class="slider-img" alt="KM godt i gang med en at udfører en topkapning" src="../assets/underpage-assets/topkapning/topkapning_3.jpg"></div>
     </div>
 
     <!-- If we need pagination -->
@@ -146,10 +142,10 @@
 </div>
         <div class="underpage-text-container">
             <div class="underpage-text-wrapper">
-                <h1 class="underpage-h1">Rodfræsning</h1>
-                <p class="underpage-p">I forbindelse med fældning af træer, er det en god ide at rodfræse roden, så der er mulighed for at bruge pladsen og jorden til græsplæne eller måske sætte et ny træ</p>
-                <h2 class="underpage-h2-cleaning">Hvad fræser vi med?</h2>
-                <p class="underpage-p-cleaning">Vi rodfræser med en Vermeer SC30TX, den er 90 cm bred og 240 cm lang og kører på bælter.  Der er næsten ingen steder hvor vi ikke kan komme til og ingen rod er for stor eller for lille til rodfræsning, den fræser i en dybde på 20-30 cm.</p>
+                <h1 class="underpage-h1">Topkapning</h1>
+                <p class="underpage-p">Topkapning er en metode hvor man skærer træet ned fra toppen, i de tilfælde hvor det ikke er muligt at fælde træet ved jorden. Dette er en teknik der også bruges ved beskæring.</p>
+                <h2 class="underpage-h2-cleaning">"Skal jeg selv ryde op?"</h2>
+                <p class="underpage-p-cleaning">Om vi skal hjælpe med oprydningen, aftaler vi ved gennemgang af opgaven eller om du selv vil stå for det.</p>
     
                 <div class="checkmark-container">
                     <div class="checkmark-one">
@@ -159,12 +155,12 @@
 
                     <div class="checkmark-one">
                         <img class="checkmark-img" src="../assets/underpage-assets/tic-mark-white.png" alt="Tic mark">
-                    <h3 class="checkmark-h3-one">Vi rodfræser med Vermeer SC30TX</h3>
+                    <h3 class="checkmark-h3-one">??????</h3>
                     </div>
 
                     <div class="checkmark-one">
                         <img class="checkmark-img" src="../assets/underpage-assets/tic-mark-white.png" alt="Tic mark">
-                        <h3 class="checkmark-h3-one">Vi Tilbyder bortskaffelse</h3>
+                        <h3 class="checkmark-h3-one">Vi Tilbyder bortskaffelse aftales i forbindelse med tilbud</h3>
                     </div>
                 </div>
 
@@ -198,7 +194,7 @@
                         KM TRÆPLEJE
                     </h1>
                     <div class="footer-logo-container">
-                        <img class="footer-logo" src="assets/footer/logo-original-large.png" alt="">
+                        <img class="footer-logo" src="../assets/footer/logo-original-large.png" alt="">
                     </div>
                     <h2 class="footer-logo-under-tekst">
                         KVALITETS <br>
@@ -211,15 +207,15 @@
                 <div class="footer-info">
                     
                     <div class="footer-info-left-top">
-                        <a class="footer-info-point" href="tel:+45-40-62-22-17"><img class="footer-phone-icon" src="assets/footer/phone-icon.png" alt="">TLF: +45 40 62 22 17</a>
+                        <a class="footer-info-point" href="tel:+45-40-62-22-17"><img class="footer-phone-icon" src="../assets/footer/phone-icon.png" alt="">TLF: +45 40 62 22 17</a>
 
-                        <a class="footer-info-point" href="https://mail.google.com/mail/?view=cm&fs=1&to=kennethmarquart@gmail.com" target=”_blank”><img class="footer-email-icon" src="assets/footer/email-icon.png" alt="">Mail: kennethmarquart@gmail.com</a>
+                        <a class="footer-info-point" href="https://mail.google.com/mail/?view=cm&fs=1&to=kennethmarquart@gmail.com" target=”_blank”><img class="footer-email-icon" src="../assets/footer/email-icon.png" alt="">Mail: kennethmarquart@gmail.com</a>
                     </div>
 
                     <div class="footer-info-right-bottom">
-                        <a class="footer-info-point" href="https://goo.gl/maps/vY3zJjvhYbGckeCr5" target=”_blank”><img class="footer-pin-icon" src="assets/footer/pin-icon.png" alt="">Adresse: Resenfeldevej 40, <br class="adress-br"> 7470 Karup </a>
+                        <a class="footer-info-point" href="https://goo.gl/maps/vY3zJjvhYbGckeCr5" target=”_blank”><img class="footer-pin-icon" src="../assets/footer/pin-icon.png" alt="">Adresse: Resenfeldevej 40, <br class="adress-br"> 7470 Karup </a>
 
-                        <p class="footer-info-point cvr-point" href=""><img class="footer-cvr-icon" src="assets/footer/briefcase_cvr.png" alt=""> CVR: 31564077</p>
+                        <p class="footer-info-point cvr-point" href=""><img class="footer-cvr-icon" src="../assets/footer/briefcase_cvr.png" alt=""> CVR: 31564077</p>
                     </div>
                     
                 </div>
@@ -228,9 +224,9 @@
             <div class="footer-bund-container">   
 
                     <div class="footer-menu-links-wrapper">
-                        <a href=""><img class="footer-facebook" src="/assets/footer/facebook-icon.png" alt="facebook logo"></a>
+                        <a href=""><img class="footer-facebook" src="../assets/footer/facebook-icon.png" alt="facebook logo"></a>
 
-                        <a href="#"><img class="footer-return-arrow" src="assets/footer/footer_return_arrow.png" alt=""></a>
+                        <a href="#"><img class="footer-return-arrow" src="../assets/footer/footer_return_arrow.png" alt=""></a>
                     </div>
 
             </div>
