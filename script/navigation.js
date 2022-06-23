@@ -44,6 +44,7 @@ function popOutNavbar() {
     if(hiddenNav.style.left == "-100vw") {
         Navbar.style.position = "fixed"
         hiddenNavWrapper.style.position = "fixed"
+        hiddenNavWrapper.style.left = "0vw"
         hiddenNav.style.position = "fixed"
         hiddenNav.style.left = "0vw"
         bars.style.display = "none"
@@ -52,6 +53,7 @@ function popOutNavbar() {
     else {
         Navbar.style.position = "absolute"
         hiddenNavWrapper.style.position = "absolute"
+        hiddenNavWrapper.style.left = "-100vw"
         hiddenNav.style.position = "absolute"
         hiddenNav.style.left = "-100vw"
         bars.style.display = "block"
