@@ -6,15 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KM-Træpleje</title>
     <!-- Css -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/cover.css">
-    <link rel="stylesheet" href="../css/card-section.css">
-    <link rel="stylesheet" href="../css/contact-section.css">
-    <link rel="stylesheet" href="../css/about-section.css">
+    <link rel="stylesheet" href="../css/services.css">
     <!-- Script -->
+    <script defer src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script defer src="../script/navigation.js"></script>
-    <script defer src="../script/cover-section.js"></script>
-    <script defer src="../script/card-section.js"></script>
+    <script defer src="../script/slide.js"></script>
     <!-- Font awesome -->
     <script src="https://kit.fontawesome.com/9eb3bf195d.js" crossorigin="anonymous"></script>
     <!-- Google Fonts -->
@@ -128,9 +126,8 @@
       <!-- Slides -->
 
       <div class="swiper-slide"><img class="slider-img" src="../assets/underpage-assets/risikovurdering/risikovurdering_slideshow.png"></div>
-      <div class="swiper-slide"><img class="slider-img" src="../assets/underpage-assets/faeldning1.jpg"></div>
-      <div class="swiper-slide"><img class="slider-img" src="../assets/underpage-assets/faeldning2.jpg"></div>
-      <div class="swiper-slide"><img class="slider-img" src="../assets/underpage-assets/faeldning3.jpg"></div>
+      <div class="swiper-slide"><img class="slider-img" src="../assets/underpage-assets/risikovurdering/risiko_1.jpg"></div>
+      <div class="swiper-slide"><img class="slider-img" src="../assets/underpage-assets/risikovurdering/risiko_2.jpg"></div>
     </div>
 
     <!-- If we need pagination -->
@@ -144,10 +141,10 @@
 </div>
         <div class="underpage-text-container">
             <div class="underpage-text-wrapper">
-                <h1 class="underpage-h1">Rodfræsning</h1>
-                <p class="underpage-p">I forbindelse med fældning af træer, er det en god ide at rodfræse roden, så der er mulighed for at bruge pladsen og jorden til græsplæne eller måske sætte et ny træ</p>
-                <h2 class="underpage-h2-cleaning">Hvad fræser vi med?</h2>
-                <p class="underpage-p-cleaning">Vi rodfræser med en Vermeer SC30TX, den er 90 cm bred og 240 cm lang og kører på bælter.  Der er næsten ingen steder hvor vi ikke kan komme til og ingen rod er for stor eller for lille til rodfræsning, den fræser i en dybde på 20-30 cm.</p>
+                <h1 class="underpage-h1">Risikovurdering</h1>
+                <p class="underpage-p">Har I træer med sygdomssymptomer eller træer med dårlig vækst eller andet der giver anledning til bekymring, kommer vi gerne og giver vores uforpligtende vurdering på træet stand.</p>
+                <h2 class="underpage-h2-cleaning">Årsager?</h2>
+                <p class="underpage-p-cleaning">Træer er som regel i risiko af flere årsager, men oftest er det pga. svampe angreb og der er mange forskellige svampe, som kan angribe træet på forskellige måder og derved gør træet ustabil. Andre gange har træet pådraget sig en skade på andre måder eller af andre årsager blevet til en risiko, som er farlig for dets omgivelser.</p>
     
                 <div class="checkmark-container">
                     <div class="checkmark-one">
@@ -157,12 +154,12 @@
 
                     <div class="checkmark-one">
                         <img class="checkmark-img" src="../assets/underpage-assets/tic-mark-white.png" alt="Tic mark">
-                    <h3 class="checkmark-h3-one">Vi rodfræser med Vermeer SC30TX</h3>
+                    <h3 class="checkmark-h3-one">Uforpligtende vurdering af sygsoms ramte træer</h3>
                     </div>
 
                     <div class="checkmark-one">
                         <img class="checkmark-img" src="../assets/underpage-assets/tic-mark-white.png" alt="Tic mark">
-                        <h3 class="checkmark-h3-one">Vi Tilbyder bortskaffelse</h3>
+                        <h3 class="checkmark-h3-one">Vi Tilbyder bortskaffelse aftales i forbindelse med tilbud</h3>
                     </div>
                 </div>
 
@@ -196,7 +193,7 @@
                         KM TRÆPLEJE
                     </h1>
                     <div class="footer-logo-container">
-                        <img class="footer-logo" src="assets/footer/logo-original-large.png" alt="">
+                        <img class="footer-logo" src="../assets/footer/logo-original-large.png" alt="">
                     </div>
                     <h2 class="footer-logo-under-tekst">
                         KVALITETS <br>
@@ -209,15 +206,15 @@
                 <div class="footer-info">
                     
                     <div class="footer-info-left-top">
-                        <a class="footer-info-point" href="tel:+45-40-62-22-17"><img class="footer-phone-icon" src="assets/footer/phone-icon.png" alt="">TLF: +45 40 62 22 17</a>
+                        <a class="footer-info-point" href="tel:+45-40-62-22-17"><img class="footer-phone-icon" src="../assets/footer/phone-icon.png" alt="">TLF: +45 40 62 22 17</a>
 
-                        <a class="footer-info-point" href="https://mail.google.com/mail/?view=cm&fs=1&to=kennethmarquart@gmail.com" target=”_blank”><img class="footer-email-icon" src="assets/footer/email-icon.png" alt="">Mail: kennethmarquart@gmail.com</a>
+                        <a class="footer-info-point" href="https://mail.google.com/mail/?view=cm&fs=1&to=kennethmarquart@gmail.com" target=”_blank”><img class="footer-email-icon" src="../assets/footer/email-icon.png" alt="">Mail: kennethmarquart@gmail.com</a>
                     </div>
 
                     <div class="footer-info-right-bottom">
-                        <a class="footer-info-point" href="https://goo.gl/maps/vY3zJjvhYbGckeCr5" target=”_blank”><img class="footer-pin-icon" src="assets/footer/pin-icon.png" alt="">Adresse: Resenfeldevej 40, <br class="adress-br"> 7470 Karup </a>
+                        <a class="footer-info-point" href="https://goo.gl/maps/vY3zJjvhYbGckeCr5" target=”_blank”><img class="footer-pin-icon" src="../assets/footer/pin-icon.png" alt="">Adresse: Resenfeldevej 40, <br class="adress-br"> 7470 Karup </a>
 
-                        <p class="footer-info-point cvr-point" href=""><img class="footer-cvr-icon" src="assets/footer/briefcase_cvr.png" alt=""> CVR: 31564077</p>
+                        <p class="footer-info-point cvr-point" href=""><img class="footer-cvr-icon" src="../assets/footer/briefcase_cvr.png" alt=""> CVR: 31564077</p>
                     </div>
                     
                 </div>
@@ -226,14 +223,11 @@
             <div class="footer-bund-container">   
 
                     <div class="footer-menu-links-wrapper">
-                        <a href=""><img class="footer-facebook" src="/assets/footer/facebook-icon.png" alt="facebook logo"></a>
+                        <a href=""><img class="footer-facebook" src="../assets/footer/facebook-icon.png" alt="facebook logo"></a>
 
-                        <a href="#"><img class="footer-return-arrow" src="assets/footer/footer_return_arrow.png" alt=""></a>
+                        <a href="#"><img class="footer-return-arrow" src="../assets/footer/footer_return_arrow.png" alt=""></a>
                     </div>
-
             </div>
-
-            
         </div>
         <p class="copyright">Copyright 2022 by KM-Træpleje</p>
     </footer>
