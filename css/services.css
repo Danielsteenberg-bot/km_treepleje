@@ -173,13 +173,12 @@
 
 @media  screen and (max-width: 500px) {
     .certificate-container{
-        flex-direction: column;
+        margin: 10%;
     }
 
     .certifikat{
         font-size: var(--medium);
-        margin: 2%;
-        text-align: center;
+        text-align: left;
     }
     
 }
