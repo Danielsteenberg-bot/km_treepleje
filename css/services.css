@@ -173,7 +173,8 @@
 
 @media  screen and (max-width: 500px) {
     .certificate-container{
-        margin: 10%;
+        margin: 4%;
+        flex-direction: column;
     }
 
     .certifikat{
