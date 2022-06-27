@@ -189,11 +189,13 @@
 
 .swiper {
     width: 100%;
+    border: 4px solid white;
+    height: 100%;
   }
 
   .slider-img{
       width: 100%;
-  }
+    }
 
   .swiper-button-next:after{
       color: var(--white);
