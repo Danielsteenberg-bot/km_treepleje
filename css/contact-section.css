@@ -53,7 +53,20 @@
 }
 .index-textarea {
     height: 120px;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
+}
+.privacy-policy-p {
+  width: 400px;
+  max-width: 80%;
+  margin-bottom: 10px;
+}
+.privacy-policy-link {
+  font-weight: 600;
+  text-decoration: underline;
+}
+.privacy-policy-link:visited {
+  font-weight: 600;
+  text-decoration: underline;
 }
 .index-form-button {
     width: 80px;
