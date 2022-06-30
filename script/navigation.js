@@ -9,7 +9,7 @@ desktopArrowContainer.addEventListener("click", desktopNavDrop)
 function desktopNavDrop() {
     
     if(desktopFoldout.style.height == "0px") {
-        desktopFoldout.style.height = "300px"
+        desktopFoldout.style.height = "292px"
         desktopArrow.style.transform = "rotate(180deg)"
     }
     else {
@@ -19,7 +19,7 @@ function desktopNavDrop() {
 }
 
 function desktopNavDropCancel() {
-    if(desktopFoldout.style.height == "300px") {
+    if(desktopFoldout.style.height == "292px") {
         desktopFoldout.style.height = "0px"
         desktopArrow.style.transform = "rotate(0deg)"
     }
