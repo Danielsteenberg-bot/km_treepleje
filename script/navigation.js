@@ -9,7 +9,7 @@ desktopArrowContainer.addEventListener("click", desktopNavDrop)
 function desktopNavDrop() {
     
     if(desktopFoldout.style.height == "0px") {
-        desktopFoldout.style.height = "300px"
+        desktopFoldout.style.height = "292px"
         desktopArrow.style.transform = "rotate(180deg)"
     }
     else {
@@ -19,10 +19,11 @@ function desktopNavDrop() {
 }
 
 function desktopNavDropCancel() {
-    if(desktopFoldout.style.height == "280px") {
+    if(desktopFoldout.style.height == "292px") {
         desktopFoldout.style.height = "0px"
         desktopArrow.style.transform = "rotate(0deg)"
     }
+    console.log("hey")
 }
 
 
@@ -67,7 +68,7 @@ let servicesMenuPoint = document.querySelector(".services")
 let servicesDivWrapper = document.querySelector(".navigation-accordion")
 let serviceArrow = document.querySelector(".fold-out-arrow")
 
-serviceArrow.addEventListener("click", function() {
+servicesMenuPoint.addEventListener("click", function() {
     if (servicesDivWrapper.style.height <= "0px") {
         servicesDivWrapper.style.height = "280px"
         serviceArrow.style.transform = "rotate(180deg)"

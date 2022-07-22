@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- cookie declaration -->
+    <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="ffa02cbf-312e-479d-a3c8-f5592e174033" data-blockingmode="auto" type="text/javascript"></script>
+    <!-- Meta -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KM-Træpleje</title>
+    <!-- Browser Icon -->
+    <link rel="icon" type="image/x-icon" href="/assets/fav-icon/favicon.png">
     <!-- Css -->
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/services.css">
-
     <!-- SEO -->
     <meta property="og:title" content="KM Træpleje"/>
     <meta property="og:description" content="KM Træpleje -- Er du usikker på om der er svamp i stammen? KM træpleje laver risikofri risikosvurdering i hele midtjylland."/>
     <meta property="og:image" content="assets/cover/logo-original-large.png"/>
-
     <!-- Script -->
     <script defer src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script defer src="../script/navigation.js"></script>
@@ -59,7 +62,7 @@
                     <li class="desktop-navigation-li"><a href="../index.html">Hjem</a></li>
 
                 <div class="services-container">
-                    <li class="desktop-navigation-li service-border-none"><a href="#cards"class="a-desktop" onclick="desktopNavDropCancel()">Services</a>
+                    <li class="desktop-navigation-li service-border-none"><a href="../index.html#cards"class="a-desktop" onclick="desktopNavDropCancel()">Services</a>
                     </li>
 
                     <div class="desktop-foldout" style="height: 0px;">
@@ -71,7 +74,7 @@
                                 <li class="navigation-accordion-li"><a href="../rodfraesning/index.html">Rodfræsning</a></li>
                                 <li class="navigation-accordion-li"><a href="../flishugning/index.html">Flishugning</a></li>
                                 <li class="navigation-accordion-li"><a href="../beskaering/index.html">Beskæring</a></li>
-                                <li class="navigation-accordion-li"><a href="risikovurdering/index.html">Risikovurdering</a></li>
+                                <li class="navigation-accordion-li"><a href="#" onclick="desktopNavDropCancel()">Risikovurdering</a></li>
                                 <li class="navigation-accordion-li"><a href="../stormfald">Stormfald</a></li>
                             </ul>
                         </div>
@@ -83,9 +86,9 @@
                 </div>
                 
                 <li 
-                class="desktop-navigation-li"><a href="#contact">Kontakt</a></li>
+                class="desktop-navigation-li"><a href="../index.html#contact">Kontakt</a></li>
 
-                <li class="desktop-navigation-li"><a href="#about">Om Os</a></li>
+                <li class="desktop-navigation-li"><a href="../index.html#about">Om Os</a></li>
             </ul>
         </div>
     </div>
@@ -104,8 +107,9 @@
 <div class="hidden-navigation-wrapper" style="left: -100vw;">
 <div id="hidden-navigation" class="hidden-navigation" style="left: -100vw;">
     <ul>
-        <li class="hidden-navigation-li"><a href="#" onclick="popOutNavbar()">HJEM</a></li>
-        <li class="hidden-navigation-li services"><a href="#cards" onclick="popOutNavbar()">SERVICES</a><img class="fold-out-arrow" src="../assets/navigation/arrow-white.png" alt="arrow">
+        <li class="hidden-navigation-li"><a href="../index.html">HJEM</a></li>
+        <li class="hidden-navigation-li services">SERVICES
+            <img class="fold-out-arrow" src="../assets/navigation/arrow-white.png" alt="arrow"></li>
             <div class="navigation-accordion" style="height: 0px;">
                 <ul>
                     <li class="navigation-accordion-li"><a href="../traefaeldning/index.html">Træfældning</a></li>
@@ -114,13 +118,13 @@
                     <li class="navigation-accordion-li"><a href="../rodfraesning/index.html">Rodfræsning</a></li>
                     <li class="navigation-accordion-li"><a href="../flishugning/index.html">Flishugning</a></li>
                     <li class="navigation-accordion-li"><a href="../beskaering/index.html">Beskæring</a></li>
-                    <li class="navigation-accordion-li"><a href="risikovurdering/index.html">Risikovurdering</a></li>
+                    <li class="navigation-accordion-li"><a href="#" onclick="popOutNavbar()">Risikovurdering</a></li>
                     <li class="navigation-accordion-li last-li-accordion"><a href="../stormfald">Stormfald</a></li>
                 </ul>
             </div>
         </li>
-        <li class="hidden-navigation-li"><a href="#contact" onclick="popOutNavbar()">KONTAKT</a></li>
-        <li class="hidden-navigation-li"><a href="#about" onclick="popOutNavbar()">OM OS</a></li>
+        <li class="hidden-navigation-li"><a href="../index.html#contact">KONTAKT</a></li>
+        <li class="hidden-navigation-li"><a href="../index.html#about">OM OS</a></li>
     </ul>
 </div>
 </div>
@@ -181,15 +185,11 @@
 
         </div>
     </div>
-        <div class="certificate-container">
-            <div class="certifact-image-container">
-                <img class="certificate-image" src="../assets/underpage-assets/icon-forsikring.png" alt="Certifikat logo">
-            </div>
-            <div class="certifacte-text-container">
-                <h2 class="certifikat">Alle opgaver udføres med godkendt sikkerhedsudstyr.<br>
-                     Ligeledes er alt arbejde dækket af godkendte forsikringer.</h2>
-            </div>    
-        </div>
+    <div class="certificate-container"> 
+        <img class="certificate-image" src="../assets/underpage-assets/icon-forsikring.png" alt="Certifikat logo">
+
+        <h2 class="certificate-h2">Alle opgaver udføres med godkendt sikkerhedsudstyr, ligeledes er alt arbejde dækket af godkendte forsikringer</h2>
+    </div>
 </section>
 
 
@@ -201,7 +201,7 @@
     <!-- Footer Start -->
     <footer class="footer-section">
         <div class="footer-content-wrapper">
-            <a href="">
+            <a href="../index.html">
                 <div class="footer-logo-text-container">
                     <h1 class="footer-logo-h1">
                         KM TRÆPLEJE
