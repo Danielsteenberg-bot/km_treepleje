@@ -20,3 +20,4 @@ const swiper = new Swiper('.swiper', {
       },
 
   });
+  console.log("Flex box kongen did this")
