@@ -21,7 +21,7 @@
 body {
     background-color: var(--green);
     color: var(--white);
-
+    
 }
 
 li {
@@ -366,4 +366,15 @@ border: 2px solid var(--white);
     .footer-menu-links-wrapper {
         margin-top: 30px;
     }
+}
+
+.snap-container {
+    scroll-snap-type: y mandatory;
+}
+
+.cover {
+    scroll-snap-align: center;
+}
+.card-section {
+    scroll-snap-align: center;
 }
