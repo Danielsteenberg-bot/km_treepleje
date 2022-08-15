@@ -89,7 +89,6 @@
 @media only screen and (min-width: 768px) {
     .contact-content-wrapper {
         justify-content: space-between;
-        
     }
     .index-form-container {
         width: 50%;
@@ -117,6 +116,12 @@
         background-color: rgba(0, 0, 0, .2);
     }
 
+}
+@media only screen and (max-height: 640px) {
+  .contact-content-wrapper {
+    justify-content: space-between;
+    max-height: 640px;
+  }
 }
 
 

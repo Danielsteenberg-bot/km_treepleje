@@ -70,7 +70,7 @@ let serviceArrow = document.querySelector(".fold-out-arrow")
 
 servicesMenuPoint.addEventListener("click", function() {
     if (servicesDivWrapper.style.height <= "0px") {
-        servicesDivWrapper.style.height = "280px"
+        servicesDivWrapper.style.height = "290px"
         serviceArrow.style.transform = "rotate(180deg)"
     }
     else {
