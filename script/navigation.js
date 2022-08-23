@@ -23,7 +23,6 @@ function desktopNavDropCancel() {
         desktopFoldout.style.height = "0px"
         desktopArrow.style.transform = "rotate(0deg)"
     }
-    console.log("hey")
 }
 
 

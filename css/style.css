@@ -52,6 +52,12 @@ a:visited {
     letter-spacing: 1px;
 }
 
+ .navbar-left .h1-hidden{
+    position: absolute;
+    left: -10000px;
+    overflow: hidden;
+}
+
 
 /* ------- left side */
 .navbar-left {
