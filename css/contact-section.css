@@ -82,8 +82,7 @@
 .index-form-button:hover{
   color: var(--black);
   background-color: var(--white);
-  border-color: var(--black);
-  transform: scale(1.1);
+  cursor: pointer;
 }
 .contact-img-container{
     display: none;
