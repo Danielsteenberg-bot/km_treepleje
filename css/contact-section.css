@@ -76,6 +76,14 @@
     font-weight: 700;
     font-size: var(--medium);
     margin-bottom: 60px;
+    transition: all ease-in-out .1s;
+}
+
+.index-form-button:hover{
+  color: var(--black);
+  background-color: var(--white);
+  border-color: var(--black);
+  transform: scale(1.1);
 }
 .contact-img-container{
     display: none;
