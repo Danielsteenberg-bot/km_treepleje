@@ -18,7 +18,7 @@ const sendToMail = (e) => {
             'text' : formInputs['text'].value
          }
 
-        fetch('https://formspree.io/f/xjvzklna', {
+        fetch('https://formspree.io/f/mbjbyjvl', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
