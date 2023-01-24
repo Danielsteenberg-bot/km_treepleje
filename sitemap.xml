@@ -10,17 +10,17 @@
 <url>
   <loc>https://km-traepleje.dk/</loc>
   <lastmod>2022-08-19T06:50:35+00:00</lastmod>
-  <priority>1.00</priority>
+  <priority>1.20</priority>
 </url>
 <url>
   <loc>https://km-traepleje.dk/traefaeldning/</loc>
   <lastmod>2022-08-09T11:17:10+00:00</lastmod>
-  <priority>0.80</priority>
+  <priority>1.10</priority>
 </url>
 <url>
   <loc>https://km-traepleje.dk/topkapning/</loc>
   <lastmod>2022-08-09T11:17:10+00:00</lastmod>
-  <priority>0.80</priority>
+  <priority>1.10</priority>
 </url>
 <url>
   <loc>https://km-traepleje.dk/haekkeklipning/</loc>
@@ -30,12 +30,12 @@
 <url>
   <loc>https://km-traepleje.dk/rodfraesning/</loc>
   <lastmod>2022-08-09T11:17:07+00:00</lastmod>
-  <priority>0.80</priority>
+  <priority>0.60</priority>
 </url>
 <url>
   <loc>https://km-traepleje.dk/flishugning/</loc>
   <lastmod>2022-08-09T11:17:06+00:00</lastmod>
-  <priority>0.80</priority>
+  <priority>0.60</priority>
 </url>
 <url>
   <loc>https://km-traepleje.dk/beskaering/</loc>
@@ -45,7 +45,7 @@
 <url>
   <loc>https://km-traepleje.dk/risikovurdering/</loc>
   <lastmod>2022-08-09T11:17:07+00:00</lastmod>
-  <priority>0.80</priority>
+  <priority>0.40</priority>
 </url>
 <url>
   <loc>https://km-traepleje.dk/stormfald/</loc>
