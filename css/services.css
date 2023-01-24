@@ -125,6 +125,21 @@
     margin-right: 5px;
 }
 
+.underpage-list{
+    padding: 20px 20px;
+}
+
+.underpage-list-heading{
+    font-size: var(--medium);
+    font-weight: 600;
+}
+
+.underpage-list-item{
+    list-style: disc;
+    font-size: var(--small);
+    margin-left: 5%;
+
+}
 
 
 /* Certifikat linje */
