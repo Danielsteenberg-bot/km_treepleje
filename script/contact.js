@@ -5,6 +5,8 @@ const contactTXT = document.querySelector('.index-form-container');
 const responseDONE = document.querySelector('.response');
 const checkMARK = document.querySelector('.check-icon');
 
+console.log("TEST")
+
 const sendToMail = (e) => {
 
     e.preventDefault()
@@ -32,7 +34,7 @@ const sendToMail = (e) => {
                 contactTXT.classList.add('hidden');
                 contactWrapper.style.display = "none";
                 responseDONE.classList.add('responsePLAY');
-                checkMARK.classList.add('.check-mark-animation')
+                checkMARK.classList.add('.check-mark-animation');
             }
         });
     
