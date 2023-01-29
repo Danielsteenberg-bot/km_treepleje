@@ -1,11 +1,15 @@
 /* Card section upper text animation */
-let cardTopText = document.querySelector(".card-section-h3")
+let cardTopText = document.querySelectorAll(".card-heading-text")
+
 
 window.addEventListener("scroll", function(){
-  element = cardTopText.getBoundingClientRect().y - this.window.innerHeight;
-  if (element <= - 30) {
-    cardTopText.classList.add("fade-in")
+  for (let i = 0; i < cardTopText.length; i++) {
+    element = cardTopText[i].getBoundingClientRect().y - this.window.innerHeight;
+    if (element <= - 30) {
+      cardTopText[i].classList.add("fade-in")
+    }
   }
+
 })
 
 /* Card section cards animation */
@@ -38,7 +42,7 @@ for (let i = 0; i < cards.length; i++) {
 window.addEventListener("scroll", function(){
   for (let i = 0; i < cards.length; i++) {
     let measuredCard = cards[0].getBoundingClientRect().y - window.innerHeight
-    console.log(measuredCard)
+  /*   console.log(measuredCard) */
     if(measuredCard <= window.innerHeight) {
     }
   }

@@ -4,11 +4,30 @@
     background-color: var(--green);
     margin: 0 auto 0 auto;
 }
-.card-section-h3 {
+.card-heading-con {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.card-heading-text {
+    opacity: 0;
+}
+.card-section-h1 {
     text-align: center;
+    width: 80%;
     font-size: var(--large);
     margin-top: 60px;
-    opacity: 0;
+}
+.card-section-h2 {
+    text-align: center;
+    width: 80%;
+}
+.card-section-p {
+   text-align: center;
+    font-size: var(--medium);
+    width: 80%;
 }
 .fade-in {
     animation: fadeIn 1s forwards;
@@ -81,9 +100,13 @@
         justify-content: center;
         align-items: center;
     }
-    .card-section-h3 {
+    .card-section-h1 {
         padding-top: 60px;
         margin-top: 0;
+        font-size: var(--large);
+    }
+    .card-section-h2 {
+        font-size: var(--mediumLarge);
     }
     .card {
         margin: 20px;
