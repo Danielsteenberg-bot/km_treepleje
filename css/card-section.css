@@ -95,11 +95,11 @@
 
 @media only screen and (min-width: 517px) {
     .card-section {
-        min-height: 100vh;
+        /* min-height: 100vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: center; */
     }
     .card-section-h1 {
         padding-top: 60px;
