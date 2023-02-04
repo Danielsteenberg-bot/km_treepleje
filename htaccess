@@ -13,5 +13,5 @@
     ExpiresByType text/css "access plus 1 month"
  </IfModule>
 
- RewriteCond %{HTTP_HOST} ^www\.km-traepleje\.dk$
-RewriteRule ^/?$ "http\:\/\/km-traepleje\.dk\/" [R=301,L]
+ RewriteCond %{HTTP_HOST} ^www\.km-træpleje\.dk$
+RewriteRule ^/?$ "http\:\/\/km-træpleje\.dk\/" [R=301,L]

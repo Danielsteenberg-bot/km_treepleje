@@ -17,7 +17,7 @@
 .card-section-h1 {
     text-align: center;
     width: 80%;
-    font-size: var(--large);
+    font-size: var(--xl);
     margin-top: 60px;
 }
 .card-section-h2 {
@@ -39,7 +39,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 40px;
+    margin-top: 0px;
 }
 .card {
     display: flex;
@@ -103,10 +103,12 @@
     .card-section-h1 {
         padding-top: 60px;
         margin-top: 0;
-        font-size: var(--large);
+       
+        font-size: var(--xl);
     }
     .card-section-h2 {
         font-size: var(--mediumLarge);
+        margin-bottom: 20px;
     }
     .card {
         margin: 20px;
