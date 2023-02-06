@@ -133,20 +133,22 @@
 }
 
 .underpage-list{
-    padding: 20px 20px;
+    /* padding: 20px 20px; */
+    
 }
 
 .underpage-list-heading{
     font-size: 24px;
     font-weight: bold;
+    margin-top: 10px;
 }
 
 .underpage-list-item{
-    list-style: disc;
+    list-style: square;
     font-size: var(--medium);
     margin-left: 30px;
-
 }
+
 
 
 /* Certifikat linje */
