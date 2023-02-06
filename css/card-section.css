@@ -24,11 +24,13 @@
     text-align: center;
     width: 80%;
     font-size: var(--mediumLarge);
+    margin-bottom: 20px;
 }
 .card-section-p {
    text-align: center;
     font-size: var(--medium);
     width: 80%;
+    margin-bottom: 20px;
 }
 .fade-in {
     animation: fadeIn 1s forwards;
@@ -95,11 +97,11 @@
 
 @media only screen and (min-width: 517px) {
     .card-section {
-        /* min-height: 100vh;
+        min-height: 100vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center; */
+        align-items: center;
     }
     .card-section-h1 {
         padding-top: 60px;
@@ -109,7 +111,9 @@
     }
     .card-section-h2 {
         font-size: var(--mediumLarge);
-        margin-bottom: 20px;
+    }
+    .card-section-p {
+        margin: 0;
     }
     .card {
         margin: 20px;

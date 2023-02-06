@@ -85,14 +85,18 @@
 .underpage-p {
     font-size: var(--medium);
 }
-.underpage-h2-cleaning {
+.underpage-h3-cleaning {
     margin-top: 30px;
+    font-size: 26px;
 }
 .underpage-p-cleaning {
     font-size: var(--medium);
 }
 .checkmark-container {
     margin-top: 60px;
+}
+.checkmark-container-wide {
+    display: none;
 }
 .checkmark-one {
     display: flex;
@@ -101,6 +105,9 @@
 }
 .checkmark-img {
     max-height: 45px;
+}
+.universal-h2 {
+    font-size: var(--mediumLarge);
 }
 .checkmark-h3-one {
     font-size: var(--medium);
@@ -130,14 +137,14 @@
 }
 
 .underpage-list-heading{
-    font-size: var(--medium);
-    font-weight: 600;
+    font-size: 24px;
+    font-weight: bold;
 }
 
 .underpage-list-item{
     list-style: disc;
-    font-size: var(--small);
-    margin-left: 5%;
+    font-size: var(--medium);
+    margin-left: 30px;
 
 }
 
@@ -181,6 +188,16 @@
         width: 100%;
        display: flex;
         justify-content: center; 
+    }
+    .checkmark-container {
+        display: none;
+    }
+    .checkmark-container-wide {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
     }
     .checkmark-h3-one{
         font-size: var(--medium);
