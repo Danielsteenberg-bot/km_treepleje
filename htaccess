@@ -1,5 +1,5 @@
 
-<!-- Fjerner "index.html" i adresse feltet -->
+### <!-- Fjerner "index.html" i adresse feltet --> ###
 <IfModule mod_expires.c>
     ExpiresActive on
  
